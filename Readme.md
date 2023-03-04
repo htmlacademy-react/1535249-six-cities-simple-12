@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов (простой)»
 
 * Студент: [Наталья Арсентьева](https://up.htmlacademy.ru/react/12/user/1535249).
-* Наставник: `Неизвестно`.
+* Наставник: [Andrey Povstyanko](https://htmlacademy.ru/profile/id1754753).
 
 ---
 
