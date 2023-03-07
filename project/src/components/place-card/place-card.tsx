@@ -1,12 +1,8 @@
 import classNames from 'classnames';
+import { PlaceCardLocation } from '../../types/const';
 
 type PlaceCardProps = {
   location: PlaceCardLocation;
-}
-
-export enum PlaceCardLocation {
-  cities = 'cities',
-  nearPlaces = 'nearPlaces',
 }
 
 function PlaceCard({location}: PlaceCardProps): JSX.Element {
@@ -21,7 +17,7 @@ function PlaceCard({location}: PlaceCardProps): JSX.Element {
         <span>Premium</span>
       </div>
       <div className="cities__image-wrapper place-card__image-wrapper">
-        <a href="#">
+        <a href="#todo">
           <img className="place-card__image" src="img/apartment-01.jpg" alt="" width="260" height="200" />
         </a>
       </div>
@@ -40,7 +36,7 @@ function PlaceCard({location}: PlaceCardProps): JSX.Element {
           </div>
         </div>
         <h2 className="place-card__name">
-          <a href="#">Beautiful &amp; luxurious apartment at great location</a>
+          <a href="#todo">Beautiful &amp; luxurious apartment at great location</a>
         </h2>
         <p className="place-card__type">Apartment</p>
       </div>

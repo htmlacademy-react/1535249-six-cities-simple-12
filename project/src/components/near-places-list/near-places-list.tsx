@@ -1,5 +1,5 @@
 import PlaceCard from '../place-card/place-card';
-import { PlaceCardLocation } from '../place-card/place-card';
+import { PlaceCardLocation } from '../../types/const';
 
 function NearPlacesList(): JSX.Element {
   return (
