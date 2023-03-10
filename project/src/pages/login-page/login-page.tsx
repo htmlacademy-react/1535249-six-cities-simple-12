@@ -1,14 +1,20 @@
+import {Helmet} from 'react-helmet-async';
+import Logo from '../../components/logo/logo';
+
 function LoginPage(): JSX.Element {
   return (
     <div className="page page--gray page--login">
 
       <header className="header">
+        <Helmet>
+          <title>
+            Шесть городов. Вход в сервис
+          </title>
+        </Helmet>
         <div className="container">
           <div className="header__wrapper">
             <div className="header__left">
-              <a className="header__logo-link" href="#todo">
-                <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41"/>
-              </a>
+              <Logo />
             </div>
           </div>
         </div>
