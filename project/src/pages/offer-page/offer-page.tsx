@@ -3,7 +3,15 @@ import {Helmet} from 'react-helmet-async';
 import Logo from '../../components/logo/logo';
 import NearPlacesList from '../../components/near-places-list/near-places-list';
 
-function OfferPage(): JSX.Element {
+import { Offer } from '../../types/offer';
+import { Reviews } from '../../types/review';
+
+type OfferPageProps = {
+  offer: Offer;
+  reviews: Reviews;
+}
+
+function OfferPage({offer, reviews}: OfferPageProps): JSX.Element {
   return (
     <div className="page">
       <Helmet>

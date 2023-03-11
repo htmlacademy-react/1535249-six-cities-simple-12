@@ -3,11 +3,14 @@ import {Helmet} from 'react-helmet-async';
 import Logo from '../../components/logo/logo';
 import CitiesPlacesList from '../../components/cities-places-list/cities-places-list';
 
+import { Offers } from '../../types/offer';
+
 type MainPageProps = {
   offersCount: number;
+  offers: Offers;
 }
 
-function MainPage({offersCount}: MainPageProps): JSX.Element {
+function MainPage({offersCount, offers}: MainPageProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <Helmet>
