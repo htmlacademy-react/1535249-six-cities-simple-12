@@ -1,3 +1,6 @@
+import {Helmet} from 'react-helmet-async';
+
+import Logo from '../../components/logo/logo';
 import CitiesPlacesList from '../../components/cities-places-list/cities-places-list';
 
 type MainPageProps = {
@@ -7,13 +10,16 @@ type MainPageProps = {
 function MainPage({offersCount}: MainPageProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
+      <Helmet>
+        <title>
+          Шесть городов - сервис для путешественников, не желающих переплачивать за аренду жилья
+        </title>
+      </Helmet>
       <header className="header">
         <div className="container">
           <div className="header__wrapper">
             <div className="header__left">
-              <a className="header__logo-link header__logo-link--active">
-                <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41"/>
-              </a>
+              <Logo />
             </div>
             <nav className="header__nav">
               <ul className="header__nav-list">
@@ -24,7 +30,7 @@ function MainPage({offersCount}: MainPageProps): JSX.Element {
                   </div>
                 </li>
                 <li className="header__nav-item">
-                  <a className="header__nav-link" href="#">
+                  <a className="header__nav-link" href="#todo">
                     <span className="header__signout">Sign out</span>
                   </a>
                 </li>
@@ -40,32 +46,32 @@ function MainPage({offersCount}: MainPageProps): JSX.Element {
           <section className="locations container">
             <ul className="locations__list tabs__list">
               <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#">
+                <a className="locations__item-link tabs__item" href="#todo">
                   <span>Paris</span>
                 </a>
               </li>
               <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#">
+                <a className="locations__item-link tabs__item" href="#todo">
                   <span>Cologne</span>
                 </a>
               </li>
               <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#">
+                <a className="locations__item-link tabs__item" href="#todo">
                   <span>Brussels</span>
                 </a>
               </li>
               <li className="locations__item">
-                <a className="locations__item-link tabs__item tabs__item--active" href="#">
+                <a className="locations__item-link tabs__item tabs__item--active" href="#todo">
                   <span>Amsterdam</span>
                 </a>
               </li>
               <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#">
+                <a className="locations__item-link tabs__item" href="#todo">
                   <span>Hamburg</span>
                 </a>
               </li>
               <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#">
+                <a className="locations__item-link tabs__item" href="#todo">
                   <span>Dusseldorf</span>
                 </a>
               </li>
