@@ -3,15 +3,17 @@ import {Helmet} from 'react-helmet-async';
 import Logo from '../../components/logo/logo';
 import NearPlacesList from '../../components/near-places-list/near-places-list';
 
-import { Offer } from '../../types/offer';
+import { Offer, Offers } from '../../types/offer';
 import { Reviews } from '../../types/review';
 
 type OfferPageProps = {
   offer: Offer;
+  offers: Offers;
   reviews: Reviews;
 }
 
-function OfferPage({offer, reviews}: OfferPageProps): JSX.Element {
+function OfferPage({offer, offers, reviews}: OfferPageProps): JSX.Element {
+  const {images, isPremium,} = offer;
   return (
     <div className="page">
       <Helmet>
@@ -48,30 +50,19 @@ function OfferPage({offer, reviews}: OfferPageProps): JSX.Element {
         <section className="property">
           <div className="property__gallery-container container">
             <div className="property__gallery">
-              <div className="property__image-wrapper">
-                <img className="property__image" src="img/room.jpg" alt=""/>
-              </div>
-              <div className="property__image-wrapper">
-                <img className="property__image" src="img/apartment-01.jpg" alt=""/>
-              </div>
-              <div className="property__image-wrapper">
-                <img className="property__image" src="img/apartment-02.jpg" alt=""/>
-              </div>
-              <div className="property__image-wrapper">
-                <img className="property__image" src="img/apartment-03.jpg" alt=""/>
-              </div>
-              <div className="property__image-wrapper">
-                <img className="property__image" src="img/studio-01.jpg" alt=""/>
-              </div>
-              <div className="property__image-wrapper">
-                <img className="property__image" src="img/apartment-01.jpg" alt=""/>
-              </div>
+              {
+                images.map((image) => (
+                  <div className="property__image-wrapper" key={image}>
+                    <img className="property__image" src={image} alt=""/>
+                  </div>
+                ))
+              }
             </div>
           </div>
           <div className="property__container container">
             <div className="property__wrapper">
               <div className="property__mark">
-                <span>Premium</span>
+                {isPremium ? <span>Premium</span> : ''}
               </div>
               <div className="property__name-wrapper">
                 <h1 className="property__name">
@@ -237,7 +228,7 @@ function OfferPage({offer, reviews}: OfferPageProps): JSX.Element {
         <div className="container">
           <section className="near-places places">
             <h2 className="near-places__title">Other places in the neighbourhood</h2>
-            <NearPlacesList />
+            <NearPlacesList offers={offers}/>
           </section>
         </div>
       </main>

@@ -24,9 +24,12 @@ export const offers = [
     },
     'id': 1,
     'images': [
+      'img/apartment-03.jpg',
       'img/apartment-01.jpg',
       'img/apartment-02.jpg',
       'img/apartment-03.jpg',
+      'img/room.jpg',
+      'img/studio-01.jpg',
     ],
     'isPremium': false,
     'location': {
@@ -72,9 +75,12 @@ export const offers = [
     },
     'id': 2,
     'images': [
+      'img/apartment-03.jpg',
       'img/apartment-01.jpg',
       'img/apartment-02.jpg',
       'img/apartment-03.jpg',
+      'img/room.jpg',
+      'img/studio-01.jpg',
     ],
     'isPremium': false,
     'location': {
@@ -111,9 +117,12 @@ export const offers = [
     },
     'id': 3,
     'images': [
+      'img/apartment-03.jpg',
       'img/apartment-01.jpg',
       'img/apartment-02.jpg',
       'img/apartment-03.jpg',
+      'img/room.jpg',
+      'img/studio-01.jpg',
     ],
     'isFavorite': false,
     'isPremium': false,
@@ -151,9 +160,12 @@ export const offers = [
     },
     'id': 4,
     'images': [
+      'img/apartment-03.jpg',
       'img/apartment-01.jpg',
       'img/apartment-02.jpg',
       'img/apartment-03.jpg',
+      'img/room.jpg',
+      'img/studio-01.jpg',
     ],
     'isFavorite': true,
     'isPremium': false,

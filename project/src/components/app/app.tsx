@@ -27,7 +27,7 @@ function App({offersCount, offers, reviews}: AppProps): JSX.Element {
         <Routes>
           <Route
             path="/"
-            element={<MainPage offersCount={offersCount} offers={offers} />}
+            element={<MainPage offers={offers} />}
           />
           <Route
             path={AppRoute.Login}
@@ -39,7 +39,13 @@ function App({offersCount, offers, reviews}: AppProps): JSX.Element {
           />
           <Route
             path={AppRoute.Property}
-            element={<OfferPage offer={offers[0]} reviews={reviews} />}
+            element={
+              <OfferPage
+                offer={offers[0]}
+                reviews={reviews}
+                offers={offers}
+              />
+            }
           />
         </Routes>
       </BrowserRouter>
