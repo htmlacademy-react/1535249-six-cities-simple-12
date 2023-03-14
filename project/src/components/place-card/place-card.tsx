@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
-import { PlaceCardLocation, MaxRating } from '../../types/const';
+import { PlaceCardLocation, MAX_RATING } from '../../types/const';
 import { Offer } from '../../types/offer';
 
 type PlaceCardProps = {
@@ -9,6 +9,8 @@ type PlaceCardProps = {
   offer: Offer;
   onMouseEnter?: (id: number | undefined) => void;
 }
+
+export const getStarRating = (rating: number): number => Math.round(rating) * 100 / MAX_RATING;
 
 function PlaceCard({location, offer, onMouseEnter}: PlaceCardProps): JSX.Element {
   const {isPremium, previewImage, price, rating, id, title, type,} = offer;
@@ -43,7 +45,7 @@ function PlaceCard({location, offer, onMouseEnter}: PlaceCardProps): JSX.Element
         </div>
         <div className="place-card__rating rating">
           <div className="place-card__stars rating__stars">
-            <span style={{width: `${Math.round(rating) * 100 / MaxRating}%`}}></span>
+            <span style={{width: `${getStarRating(rating)}%`}}></span>
             <span className="visually-hidden">Rating</span>
           </div>
         </div>

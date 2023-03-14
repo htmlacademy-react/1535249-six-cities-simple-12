@@ -18,7 +18,7 @@ export const reviews = [
     'rating': 5,
     'user': {
       'avatarUrl': 'img/avatar-max.jpg',
-      'id': 1,
+      'id': 2,
       'isPro': false,
       'name': 'Max',
     }
@@ -42,7 +42,7 @@ export const reviews = [
     'rating': 3,
     'user': {
       'avatarUrl': 'img/avatar-max.jpg',
-      'id': 1,
+      'id': 2,
       'isPro': false,
       'name': 'Max',
     }

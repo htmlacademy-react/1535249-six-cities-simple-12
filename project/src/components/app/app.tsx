@@ -41,7 +41,6 @@ function App({offersCount, offers, reviews}: AppProps): JSX.Element {
             path={AppRoute.Property}
             element={
               <OfferPage
-                offer={offers[0]}
                 reviews={reviews}
                 offers={offers}
               />
