@@ -1,12 +1,23 @@
 import PlaceCard from '../place-card/place-card';
 import { PlaceCardLocation } from '../../types/const';
+import { Offers } from '../../types/offer';
 
-function NearPlacesList(): JSX.Element {
+type NearPlacesListProps = {
+  offers: Offers;
+}
+
+function NearPlacesList({offers}: NearPlacesListProps): JSX.Element {
   return (
     <div className="near-places__list places__list">
-      <PlaceCard location={PlaceCardLocation.nearPlaces}/>
-      <PlaceCard location={PlaceCardLocation.nearPlaces}/>
-      <PlaceCard location={PlaceCardLocation.nearPlaces}/>
+      {
+        offers.map((offer) => (
+          <PlaceCard
+            offer={offer}
+            location={PlaceCardLocation.nearPlaces}
+            key={offer.id}
+          />
+        ))
+      }
     </div>
   );
 }
