@@ -1,32 +1,42 @@
 import classNames from 'classnames';
-import { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
-import { PlaceCardLocation, MAX_RATING } from '../../types/const';
+import { PlaceCardLocation, MAX_RATING } from '../../const';
 import { Offer } from '../../types/offer';
 
 type PlaceCardProps = {
   location: PlaceCardLocation;
   offer: Offer;
-  onMouseEnter?: (id: number | undefined) => void;
+  onMouseEnter?: (id: number) => void;
+  onMouseLeave?: () => void;
 }
 
 export const getStarRating = (rating: number): number => Math.round(rating) * 100 / MAX_RATING;
 
-function PlaceCard({location, offer, onMouseEnter}: PlaceCardProps): JSX.Element {
+function PlaceCard({location, offer, onMouseEnter, onMouseLeave}: PlaceCardProps): JSX.Element {
   const {isPremium, previewImage, price, rating, id, title, type,} = offer;
   const placeCardClass = classNames('place-card', {
     'cities__card': location === PlaceCardLocation.cities,
     'near-places__card': location === PlaceCardLocation.nearPlaces,
   });
-  const onMouseEnterHandler = (evt: MouseEvent) => {
-    evt.preventDefault();
+
+  const onMouseEnterHandler = () => {
     if (onMouseEnter) {
       onMouseEnter(offer.id);
     }
   };
 
+  const onMouseLeaveHandler = () => {
+    if (onMouseLeave) {
+      onMouseLeave();
+    }
+  };
+
   return (
-    <article className={placeCardClass} onMouseEnter={onMouseEnterHandler}>
+    <article
+      className={placeCardClass}
+      onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}
+    >
       <div className="place-card__mark">
         {isPremium ? <span>Premium</span> : ''}
       </div>

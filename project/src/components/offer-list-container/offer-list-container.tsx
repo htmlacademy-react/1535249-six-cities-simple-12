@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import CitiesPlacesList from '../cities-places-list/cities-places-list';
 import { Offers } from '../../types/offer';
-import { ZERO_ID} from '../../types/const';
+import { ZERO_ID} from '../../const';
 
 type OfferListContainerProps = {
   offers: Offers;
 }
 
 function OfferListContainer({offers}: OfferListContainerProps): JSX.Element {
-  const [/*activeOffer*/, setActiveOffer] = useState<number | undefined>(ZERO_ID);
+  const [/*activeOffer*/, setActiveOffer] = useState<number | null>(ZERO_ID);
 
   return (
     <div className="cities__places-container container">
@@ -30,7 +30,7 @@ function OfferListContainer({offers}: OfferListContainerProps): JSX.Element {
             <li className="places__option" tabIndex={0}>Top rated first</li>
           </ul>
         </form>
-        <CitiesPlacesList offers={offers} offerHoverHandler={setActiveOffer}/>
+        <CitiesPlacesList offers={offers} setActiveOffer={setActiveOffer}/>
       </section>
       <div className="cities__right-section">
         <section className="cities__map map"></section>

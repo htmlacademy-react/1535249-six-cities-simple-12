@@ -1,13 +1,13 @@
 import PlaceCard from '../place-card/place-card';
 import { Offers } from '../../types/offer';
-import { PlaceCardLocation } from '../../types/const';
+import { PlaceCardLocation } from '../../const';
 
 type CitiesPlacesListProps = {
   offers: Offers;
-  offerHoverHandler?: (id: number | undefined) => void;
+  setActiveOffer: (id: number | null) => void;
 }
 
-function CitiesPlacesList({offers, offerHoverHandler}: CitiesPlacesListProps): JSX.Element {
+function CitiesPlacesList({offers, setActiveOffer}: CitiesPlacesListProps): JSX.Element {
   return (
     <div className="cities__places-list places__list tabs__content">
       {
@@ -16,7 +16,8 @@ function CitiesPlacesList({offers, offerHoverHandler}: CitiesPlacesListProps): J
             offer={offer}
             location={PlaceCardLocation.cities}
             key={offer.id}
-            onMouseEnter={offerHoverHandler}
+            onMouseEnter={() => setActiveOffer(offer.id)}
+            onMouseLeave={() => setActiveOffer(null)}
           />
         ))
       }
