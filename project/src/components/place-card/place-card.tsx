@@ -37,9 +37,13 @@ function PlaceCard({location, offer, onMouseEnter, onMouseLeave}: PlaceCardProps
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
     >
-      <div className="place-card__mark">
-        {isPremium ? <span>Premium</span> : ''}
-      </div>
+      {
+        isPremium ?
+          <div className="place-card__mark">
+            <span>Premium</span>
+          </div> :
+          ''
+      }
       <div className="cities__image-wrapper place-card__image-wrapper">
         <Link to={`/offer/${id}`}>
           <img className="place-card__image" src={previewImage} alt="" width="260" height="200" />

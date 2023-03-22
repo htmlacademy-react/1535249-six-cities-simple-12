@@ -1,13 +1,15 @@
+//import { useState } from 'react';
 import PlaceCard from '../place-card/place-card';
 import { Offers } from '../../types/offer';
 import { PlaceCardLocation } from '../../const';
 
 type CitiesPlacesListProps = {
   offers: Offers;
-  setActiveOffer: (id: number | null) => void;
+  onPlaceCardHover: (id: number | null) => void;
 }
 
-function CitiesPlacesList({offers, setActiveOffer}: CitiesPlacesListProps): JSX.Element {
+function CitiesPlacesList({offers, onPlaceCardHover}: CitiesPlacesListProps): JSX.Element {
+
   return (
     <div className="cities__places-list places__list tabs__content">
       {
@@ -16,8 +18,8 @@ function CitiesPlacesList({offers, setActiveOffer}: CitiesPlacesListProps): JSX.
             offer={offer}
             location={PlaceCardLocation.cities}
             key={offer.id}
-            onMouseEnter={() => setActiveOffer(offer.id)}
-            onMouseLeave={() => setActiveOffer(null)}
+            onMouseEnter={() => onPlaceCardHover(offer.id)}
+            onMouseLeave={() => onPlaceCardHover(null)}
           />
         ))
       }

@@ -2,13 +2,14 @@ import {Helmet} from 'react-helmet-async';
 
 import Logo from '../../components/logo/logo';
 import OfferListContainer from '../../components/offer-list-container/offer-list-container';
-import { Offers } from '../../types/offer';
+import { City, Offers } from '../../types/offer';
 
 type MainPageProps = {
+  city: City;
   offers: Offers;
 }
 
-function MainPage({offers}: MainPageProps): JSX.Element {
+function MainPage({city, offers}: MainPageProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <Helmet>
@@ -80,7 +81,7 @@ function MainPage({offers}: MainPageProps): JSX.Element {
           </section>
         </div>
         <div className="cities">
-          <OfferListContainer offers={offers}/>
+          <OfferListContainer offers={offers} city={city}/>
         </div>
       </main>
     </div>
