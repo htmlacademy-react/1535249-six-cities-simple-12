@@ -31,10 +31,10 @@ export const offers = [
       'img/room.jpg',
       'img/studio-01.jpg',
     ],
-    'isPremium': false,
+    'isPremium': true,
     'location': {
-      'latitude': 52.370216,
-      'longitude': 4.895168,
+      'latitude': 52.3909553943508,
+      'longitude': 4.85309666406198,
       'zoom': 8
     },
     'maxAdults': 4,
@@ -84,8 +84,8 @@ export const offers = [
     ],
     'isPremium': false,
     'location': {
-      'latitude': 45.5786200,
-      'longitude': 9.9418000,
+      'latitude': 52.3609553943508,
+      'longitude': 4.85309666406198,
       'zoom': 10
     },
     'maxAdults': 4,
@@ -127,8 +127,8 @@ export const offers = [
     'isFavorite': false,
     'isPremium': false,
     'location': {
-      'latitude': 50.8504500,
-      'longitude': 4.3487800,
+      'latitude': 52.3909553943508,
+      'longitude': 4.929309666406198,
       'zoom': 8
     },
     'maxAdults': 4,
@@ -168,10 +168,10 @@ export const offers = [
       'img/studio-01.jpg',
     ],
     'isFavorite': true,
-    'isPremium': false,
+    'isPremium': true,
     'location': {
-      'latitude': 48.85341,
-      'longitude': 2.3488,
+      'latitude': 52.3809553943508,
+      'longitude': 4.939309666406198,
       'zoom': 8
     },
     'maxAdults': 4,

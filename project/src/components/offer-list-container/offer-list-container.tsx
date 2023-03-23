@@ -1,14 +1,22 @@
 import { useState } from 'react';
 import CitiesPlacesList from '../cities-places-list/cities-places-list';
-import { Offers } from '../../types/offer';
-import { ZERO_ID} from '../../types/const';
+import Map from '../map/map';
+import { City, Offers, Offer } from '../../types/offer';
+//import { ZERO_ID} from '../../const';
 
 type OfferListContainerProps = {
+  city: City;
   offers: Offers;
 }
 
-function OfferListContainer({offers}: OfferListContainerProps): JSX.Element {
-  const [/*activeOffer*/, setActiveOffer] = useState<number | undefined>(ZERO_ID);
+function OfferListContainer({city, offers}: OfferListContainerProps): JSX.Element {
+  const [activeOffer, setActiveOffer] = useState<Offer | undefined>(undefined);
+
+  const onPlaceCardHover = (offerId: number | null) => {
+    const currentOffer = offers.find((offer) => offer.id === offerId);
+
+    setActiveOffer(currentOffer);
+  };
 
   return (
     <div className="cities__places-container container">
@@ -30,10 +38,10 @@ function OfferListContainer({offers}: OfferListContainerProps): JSX.Element {
             <li className="places__option" tabIndex={0}>Top rated first</li>
           </ul>
         </form>
-        <CitiesPlacesList offers={offers} offerHoverHandler={setActiveOffer}/>
+        <CitiesPlacesList offers={offers} onPlaceCardHover={onPlaceCardHover}/>
       </section>
       <div className="cities__right-section">
-        <section className="cities__map map"></section>
+        <Map city={city} offers={offers} selectedOffer={activeOffer}/>
       </div>
     </div>
   );

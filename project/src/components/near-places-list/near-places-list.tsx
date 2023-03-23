@@ -1,5 +1,5 @@
 import PlaceCard from '../place-card/place-card';
-import { PlaceCardLocation } from '../../types/const';
+import { PlaceCardLocation } from '../../const';
 import { Offers } from '../../types/offer';
 
 type NearPlacesListProps = {

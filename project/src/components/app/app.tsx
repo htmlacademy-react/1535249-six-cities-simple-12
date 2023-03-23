@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import {HelmetProvider} from 'react-helmet-async';
-import { AppRoute } from '../../types/const';
+import { AppRoute } from '../../const';
 
 import MainPage from '../../pages/main-page/main-page';
 import LoginPage from '../../pages/login-page/login-page';
@@ -27,7 +27,7 @@ function App({offersCount, offers, reviews}: AppProps): JSX.Element {
         <Routes>
           <Route
             path="/"
-            element={<MainPage offers={offers} />}
+            element={<MainPage city={offers[0].city} offers={offers} />}
           />
           <Route
             path={AppRoute.Login}

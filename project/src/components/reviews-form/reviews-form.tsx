@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from 'react';
-import { MIN_COMMENT_LENGTH, MAX_COMMENT_LENGTH} from '../../types/const';
+import { MIN_COMMENT_LENGTH, MAX_COMMENT_LENGTH} from '../../const';
 
 function ReviewsForm(): JSX.Element {
   const [formData, setFormData] = useState({
