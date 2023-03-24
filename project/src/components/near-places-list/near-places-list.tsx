@@ -10,7 +10,7 @@ function NearPlacesList({offers}: NearPlacesListProps): JSX.Element {
   return (
     <div className="near-places__list places__list">
       {
-        offers.map((offer) => (
+        offers.slice(0, 3).map((offer) => (
           <PlaceCard
             offer={offer}
             location={PlaceCardLocation.nearPlaces}

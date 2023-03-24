@@ -4,10 +4,13 @@ import Logo from '../../components/logo/logo';
 import { getStarRating } from '../../components/place-card/place-card';
 import ReviewsForm from '../../components/reviews-form/reviews-form';
 import Comment from '../../components/comment/comment';
+import Map from '../../components/map/map';
 import NearPlacesList from '../../components/near-places-list/near-places-list';
 
-import { Offers } from '../../types/offer';
+import { Offers, Offer } from '../../types/offer';
 import { Reviews } from '../../types/review';
+
+import { MapLocation } from '../../const';
 
 type OfferPageProps = {
   offers: Offers;
@@ -17,7 +20,7 @@ type OfferPageProps = {
 function OfferPage({offers, reviews}: OfferPageProps): JSX.Element {
   const {id} = useParams();
 
-  const offer = offers.find((room) => room.id === Number(id));
+  const offer: Offer | undefined = offers.find((room) => room.id === Number(id));
   if (!offer) {
     throw new Error('Url не существует');
   }
@@ -140,13 +143,13 @@ function OfferPage({offers, reviews}: OfferPageProps): JSX.Element {
                 <ReviewsForm />
               </section>
             </div>
+            <Map city={offer.city} offers={offers} selectedOffer={offer} mapLocation={MapLocation.property}/>
           </div>
-          <section className="property__map map"></section>
         </section>
         <div className="container">
           <section className="near-places places">
             <h2 className="near-places__title">Other places in the neighbourhood</h2>
-            <NearPlacesList offers={offers}/>
+            <NearPlacesList offers={offers} />
           </section>
         </div>
       </main>
