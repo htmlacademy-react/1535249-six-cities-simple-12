@@ -16,6 +16,11 @@ export enum PlaceCardLocation {
   nearPlaces = 'nearPlaces',
 }
 
+export enum MapLocation {
+  cities = 'cities',
+  property = 'property',
+}
+
 export const MIN_RATING = 0;
 export const MAX_RATING = 5;
 export const MIN_COMMENT_LENGTH = 50;

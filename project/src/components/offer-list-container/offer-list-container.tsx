@@ -2,7 +2,7 @@ import { useState } from 'react';
 import CitiesPlacesList from '../cities-places-list/cities-places-list';
 import Map from '../map/map';
 import { City, Offers, Offer } from '../../types/offer';
-//import { ZERO_ID} from '../../const';
+import { MapLocation } from '../../const';
 
 type OfferListContainerProps = {
   city: City;
@@ -41,7 +41,7 @@ function OfferListContainer({city, offers}: OfferListContainerProps): JSX.Elemen
         <CitiesPlacesList offers={offers} onPlaceCardHover={onPlaceCardHover}/>
       </section>
       <div className="cities__right-section">
-        <Map city={city} offers={offers} selectedOffer={activeOffer}/>
+        <Map city={city} offers={offers} selectedOffer={activeOffer} mapLocation={MapLocation.cities}/>
       </div>
     </div>
   );
