@@ -1,9 +1,9 @@
-import {useRef, useEffect} from 'react';
-import {Icon, Marker} from 'leaflet';
+import { useRef, useEffect, useState } from 'react';
+import { Icon, Marker, LayerGroup } from 'leaflet';
 import classNames from 'classnames';
 import useMap from '../../hooks/useMap';
-import {City, Offers, Offer} from '../../types/offer';
-import {MapLocation, URL_MARKER_DEFAULT, URL_MARKER_CURRENT} from '../../const';
+import { City, Offers, Offer } from '../../types/offer';
+import { MapLocation, URL_MARKER_DEFAULT, URL_MARKER_CURRENT } from '../../const';
 import 'leaflet/dist/leaflet.css';
 
 type MapProps = {
@@ -33,8 +33,26 @@ function Map({city, offers, selectedOffer, mapLocation}: MapProps): JSX.Element 
     'property__map': mapLocation === MapLocation.property,
   });
 
+  const [markerLayers, ] = useState<LayerGroup>(new LayerGroup());
+
+  //устанавливает цетр карты в city
+  useEffect(
+    () => {
+      if (map) {
+        map.flyTo(
+          {
+            lat: city.location.latitude,
+            lng: city.location.longitude,
+          },
+          city.location.zoom
+        );
+      }
+    }, [map, city]);
+
   useEffect(() => {
     if (map) {
+      markerLayers.clearLayers();
+
       offers.forEach((offer) => {
         const marker = new Marker({
           lat: offer.location.latitude,
@@ -47,10 +65,11 @@ function Map({city, offers, selectedOffer, mapLocation}: MapProps): JSX.Element 
               ? currentCustomIcon
               : defaultCustomIcon
           )
-          .addTo(map);
+          .addTo(markerLayers);
       });
+      markerLayers.addTo(map);
     }
-  }, [map, offers, selectedOffer]);
+  }, [map, offers, selectedOffer, markerLayers]);
 
   return (
     <section
