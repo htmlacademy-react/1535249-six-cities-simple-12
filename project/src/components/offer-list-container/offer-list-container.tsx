@@ -1,15 +1,17 @@
 import { useState } from 'react';
 import CitiesPlacesList from '../cities-places-list/cities-places-list';
 import Map from '../map/map';
-import { City, Offers, Offer } from '../../types/offer';
+import { Offers, Offer } from '../../types/offer';
 import { MapLocation } from '../../const';
+//import { useAppDispatch, useAppSelector } from '../../hooks';
 
 type OfferListContainerProps = {
-  city: City;
   offers: Offers;
 }
 
-function OfferListContainer({city, offers}: OfferListContainerProps): JSX.Element {
+function OfferListContainer({ offers }: OfferListContainerProps): JSX.Element {
+  const currentCity = offers[0].city;
+
   const [activeOffer, setActiveOffer] = useState<Offer | undefined>(undefined);
 
   const onPlaceCardHover = (offerId: number | null) => {
@@ -22,7 +24,7 @@ function OfferListContainer({city, offers}: OfferListContainerProps): JSX.Elemen
     <div className="cities__places-container container">
       <section className="cities__places places">
         <h2 className="visually-hidden">Places</h2>
-        <b className="places__found">{offers.length} places to stay in Amsterdam</b>
+        <b className="places__found">{offers.length} places to stay in {currentCity.name}</b>
         <form className="places__sorting" action="#" method="get">
           <span className="places__sorting-caption">Sort by</span>
           <span className="places__sorting-type" tabIndex={0}>
@@ -41,7 +43,7 @@ function OfferListContainer({city, offers}: OfferListContainerProps): JSX.Elemen
         <CitiesPlacesList offers={offers} onPlaceCardHover={onPlaceCardHover}/>
       </section>
       <div className="cities__right-section">
-        <Map city={city} offers={offers} selectedOffer={activeOffer} mapLocation={MapLocation.cities}/>
+        <Map city={currentCity} offers={offers} selectedOffer={activeOffer} mapLocation={MapLocation.cities}/>
       </div>
     </div>
   );

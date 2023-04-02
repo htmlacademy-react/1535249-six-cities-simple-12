@@ -1,15 +1,16 @@
 import {Helmet} from 'react-helmet-async';
 
 import Logo from '../../components/logo/logo';
+import LocationsList from '../../components/locations-list/locations-list';
+import MainPageEmpty from '../main-page-empty/main-page-empty';
 import OfferListContainer from '../../components/offer-list-container/offer-list-container';
-import { City, Offers } from '../../types/offer';
+import { Offers } from '../../types/offer';
 
 type MainPageProps = {
-  city: City;
   offers: Offers;
 }
 
-function MainPage({city, offers}: MainPageProps): JSX.Element {
+function MainPage({ offers }: MainPageProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <Helmet>
@@ -46,42 +47,15 @@ function MainPage({city, offers}: MainPageProps): JSX.Element {
         <h1 className="visually-hidden">Cities</h1>
         <div className="tabs">
           <section className="locations container">
-            <ul className="locations__list tabs__list">
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#todo">
-                  <span>Paris</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#todo">
-                  <span>Cologne</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#todo">
-                  <span>Brussels</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item tabs__item--active" href="#todo">
-                  <span>Amsterdam</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#todo">
-                  <span>Hamburg</span>
-                </a>
-              </li>
-              <li className="locations__item">
-                <a className="locations__item-link tabs__item" href="#todo">
-                  <span>Dusseldorf</span>
-                </a>
-              </li>
-            </ul>
+            <LocationsList currentLocation={offers[0].city.name}/>
           </section>
         </div>
         <div className="cities">
-          <OfferListContainer offers={offers} city={city}/>
+          {
+            offers ?
+              <OfferListContainer offers={offers} /> :
+              <MainPageEmpty />
+          }
         </div>
       </main>
     </div>
