@@ -48,8 +48,8 @@ export const offers = [
     'bedrooms': 3,
     'city': {
       'location': {
-        'latitude': 52.370216,
-        'longitude': 4.895168,
+        'latitude': 50.940315277984816,
+        'longitude': 6.962508811550094,
         'zoom': 10
       },
       'name': 'Cologne'
@@ -84,8 +84,8 @@ export const offers = [
     ],
     'isPremium': false,
     'location': {
-      'latitude': 52.3609553943508,
-      'longitude': 4.85309666406198,
+      'latitude': 50.931984415671366,
+      'longitude': 6.953879385439683,
       'zoom': 10
     },
     'maxAdults': 4,
@@ -99,8 +99,8 @@ export const offers = [
     'bedrooms': 3,
     'city': {
       'location': {
-        'latitude': 50.8504500,
-        'longitude': 4.3487800,
+        'latitude': 50.85140627578981,
+        'longitude': 4.362838557263834,
         'zoom': 10
       },
       'name': 'Brussels'
@@ -127,8 +127,8 @@ export const offers = [
     'isFavorite': false,
     'isPremium': false,
     'location': {
-      'latitude': 52.3909553943508,
-      'longitude': 4.929309666406198,
+      'latitude': 50.84281395268707,
+      'longitude': 4.355443206909527,
       'zoom': 8
     },
     'maxAdults': 4,
@@ -142,8 +142,8 @@ export const offers = [
     'bedrooms': 3,
     'city': {
       'location': {
-        'latitude': 48.85341,
-        'longitude': 2.3488,
+        'latitude': 48.8534100,
+        'longitude': 2.3488000,
         'zoom': 10
       },
       'name': 'Paris'
@@ -170,8 +170,8 @@ export const offers = [
     'isFavorite': true,
     'isPremium': true,
     'location': {
-      'latitude': 52.3809553943508,
-      'longitude': 4.939309666406198,
+      'latitude': 48.85034227737311,
+      'longitude': 2.3341077685649307,
       'zoom': 8
     },
     'maxAdults': 4,
