@@ -3,7 +3,7 @@ import PlaceCard from '../place-card/place-card';
 import { Offers } from '../../types/offer';
 import { PlaceCardLocation } from '../../const';
 import PlacesSorting from '../places-sorting/places-sorting';
-import { sortingByType } from '../places-sorting/compireFn';
+import { sortingByType, PlacesSortingTypes } from './compireFn';
 
 
 type CitiesPlacesListProps = {
@@ -19,8 +19,8 @@ function CitiesPlacesList({offers, onPlaceCardHover}: CitiesPlacesListProps): JS
   return (
     <>
       <PlacesSorting
-        offers={offers}
-        placesSortingType={placesSortingType}
+        placesSortingTypes={PlacesSortingTypes}
+        currentPlacesSortingType={placesSortingType}
         setPlacesSortingType={setPlacesSortingType}
       />
       <div className="cities__places-list places__list tabs__content">
