@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import {Helmet} from 'react-helmet-async';
 
 import Logo from '../../components/logo/logo';
@@ -7,10 +8,15 @@ import OfferListContainer from '../../components/offer-list-container/offer-list
 import { Offers } from '../../types/offer';
 
 type MainPageProps = {
+  currentCity: string;
   offers: Offers;
 }
 
-function MainPage({ offers }: MainPageProps): JSX.Element {
+function MainPage({ currentCity, offers, }: MainPageProps): JSX.Element {
+  const mainPageClass = classNames('page__main page__main--index', {
+    'page__main--index-empty': offers.length === 0,
+  });
+
   return (
     <div className="page page--gray page--main">
       <Helmet>
@@ -43,16 +49,16 @@ function MainPage({ offers }: MainPageProps): JSX.Element {
         </div>
       </header>
 
-      <main className="page__main page__main--index">
+      <main className={mainPageClass}>
         <h1 className="visually-hidden">Cities</h1>
         <div className="tabs">
           <section className="locations container">
-            <LocationsList currentLocation={offers[0].city.name}/>
+            <LocationsList currentLocation={currentCity}/>
           </section>
         </div>
         <div className="cities">
           {
-            offers ?
+            offers.length !== 0 ?
               <OfferListContainer offers={offers} /> :
               <MainPageEmpty />
           }

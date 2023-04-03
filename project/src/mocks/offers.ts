@@ -108,64 +108,64 @@ export const offers = [
     },
     'id': 2
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/12.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg'
-    ],
-    'title': 'The Joshua Tree House',
-    'isPremium': true,
-    'rating': 4.5,
-    'type': 'house',
-    'bedrooms': 3,
-    'maxAdults': 5,
-    'price': 165,
-    'goods': [
-      'Laptop friendly workspace',
-      'Coffee machine',
-      'Baby seat',
-      'Fridge',
-      'Breakfast',
-      'Air conditioning',
-      'Washer',
-      'Dishwasher',
-      'Towels'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'I rent out a very sunny and bright apartment only 7 minutes walking distance to the metro station. The apartment has a spacious living room with a kitchen, one bedroom and a bathroom with mit bath. A terrace can be used in summer.',
-    'location': {
-      'latitude': 51.217402,
-      'longitude': 6.7693140000000005,
-      'zoom': 16
-    },
-    'id': 3
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/12.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg'
+  //   ],
+  //   'title': 'The Joshua Tree House',
+  //   'isPremium': true,
+  //   'rating': 4.5,
+  //   'type': 'house',
+  //   'bedrooms': 3,
+  //   'maxAdults': 5,
+  //   'price': 165,
+  //   'goods': [
+  //     'Laptop friendly workspace',
+  //     'Coffee machine',
+  //     'Baby seat',
+  //     'Fridge',
+  //     'Breakfast',
+  //     'Air conditioning',
+  //     'Washer',
+  //     'Dishwasher',
+  //     'Towels'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'I rent out a very sunny and bright apartment only 7 minutes walking distance to the metro station. The apartment has a spacious living room with a kitchen, one bedroom and a bathroom with mit bath. A terrace can be used in summer.',
+  //   'location': {
+  //     'latitude': 51.217402,
+  //     'longitude': 6.7693140000000005,
+  //     'zoom': 16
+  //   },
+  //   'id': 3
+  // },
   {
     'city': {
       'name': 'Brussels',
@@ -445,114 +445,114 @@ export const offers = [
     },
     'id': 8
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/16.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg'
-    ],
-    'title': 'Perfectly located Castro',
-    'isPremium': false,
-    'rating': 4.8,
-    'type': 'hotel',
-    'bedrooms': 4,
-    'maxAdults': 9,
-    'price': 432,
-    'goods': [
-      'Laptop friendly workspace',
-      'Dishwasher',
-      'Baby seat',
-      'Towels',
-      'Breakfast',
-      'Washer',
-      'Fridge',
-      'Air conditioning'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Peaceful studio in the most wanted area in town. Quiet house Near of everything. Completely renovated. Lovely neighbourhood, lot of trendy shops, restaurants and bars in a walking distance.',
-    'location': {
-      'latitude': 51.236402000000005,
-      'longitude': 6.784314,
-      'zoom': 16
-    },
-    'id': 9
-  },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/10.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg'
-    ],
-    'title': 'Amazing and Extremely Central Flat',
-    'isPremium': false,
-    'rating': 4.4,
-    'type': 'room',
-    'bedrooms': 1,
-    'maxAdults': 2,
-    'price': 108,
-    'goods': [
-      'Breakfast',
-      'Laptop friendly workspace'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
-    'location': {
-      'latitude': 51.248402000000006,
-      'longitude': 6.763314,
-      'zoom': 16
-    },
-    'id': 10
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/16.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg'
+  //   ],
+  //   'title': 'Perfectly located Castro',
+  //   'isPremium': false,
+  //   'rating': 4.8,
+  //   'type': 'hotel',
+  //   'bedrooms': 4,
+  //   'maxAdults': 9,
+  //   'price': 432,
+  //   'goods': [
+  //     'Laptop friendly workspace',
+  //     'Dishwasher',
+  //     'Baby seat',
+  //     'Towels',
+  //     'Breakfast',
+  //     'Washer',
+  //     'Fridge',
+  //     'Air conditioning'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Peaceful studio in the most wanted area in town. Quiet house Near of everything. Completely renovated. Lovely neighbourhood, lot of trendy shops, restaurants and bars in a walking distance.',
+  //   'location': {
+  //     'latitude': 51.236402000000005,
+  //     'longitude': 6.784314,
+  //     'zoom': 16
+  //   },
+  //   'id': 9
+  // },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/10.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg'
+  //   ],
+  //   'title': 'Amazing and Extremely Central Flat',
+  //   'isPremium': false,
+  //   'rating': 4.4,
+  //   'type': 'room',
+  //   'bedrooms': 1,
+  //   'maxAdults': 2,
+  //   'price': 108,
+  //   'goods': [
+  //     'Breakfast',
+  //     'Laptop friendly workspace'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
+  //   'location': {
+  //     'latitude': 51.248402000000006,
+  //     'longitude': 6.763314,
+  //     'zoom': 16
+  //   },
+  //   'id': 10
+  // },
   {
     'city': {
       'name': 'Brussels',
@@ -883,59 +883,59 @@ export const offers = [
     },
     'id': 16
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/4.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg'
-    ],
-    'title': 'Waterfront with extraordinary view',
-    'isPremium': false,
-    'rating': 2.9,
-    'type': 'hotel',
-    'bedrooms': 3,
-    'maxAdults': 8,
-    'price': 322,
-    'goods': [
-      'Air conditioning',
-      'Laptop friendly workspace',
-      'Breakfast',
-      'Washer'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Relax, rejuvenate and unplug in this ultimate rustic getaway experience in the country. In our beautiful screened Pondhouse, you can gaze at the stars and listen to the sounds of nature from your cozy warm bed.',
-    'location': {
-      'latitude': 51.239402000000005,
-      'longitude': 6.756314000000001,
-      'zoom': 16
-    },
-    'id': 17
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/4.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg'
+  //   ],
+  //   'title': 'Waterfront with extraordinary view',
+  //   'isPremium': false,
+  //   'rating': 2.9,
+  //   'type': 'hotel',
+  //   'bedrooms': 3,
+  //   'maxAdults': 8,
+  //   'price': 322,
+  //   'goods': [
+  //     'Air conditioning',
+  //     'Laptop friendly workspace',
+  //     'Breakfast',
+  //     'Washer'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Relax, rejuvenate and unplug in this ultimate rustic getaway experience in the country. In our beautiful screened Pondhouse, you can gaze at the stars and listen to the sounds of nature from your cozy warm bed.',
+  //   'location': {
+  //     'latitude': 51.239402000000005,
+  //     'longitude': 6.756314000000001,
+  //     'zoom': 16
+  //   },
+  //   'id': 17
+  // },
   {
     'city': {
       'name': 'Brussels',
@@ -1332,116 +1332,116 @@ export const offers = [
     },
     'id': 24
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/9.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg'
-    ],
-    'title': 'Penthouse, 4-5 rooms + 5 balconies',
-    'isPremium': true,
-    'rating': 3.1,
-    'type': 'house',
-    'bedrooms': 3,
-    'maxAdults': 4,
-    'price': 632,
-    'goods': [
-      'Washer',
-      'Towels',
-      'Laptop friendly workspace',
-      'Air conditioning',
-      'Breakfast',
-      'Fridge',
-      'Baby seat'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Peaceful studio in the most wanted area in town. Quiet house Near of everything. Completely renovated. Lovely neighbourhood, lot of trendy shops, restaurants and bars in a walking distance.',
-    'location': {
-      'latitude': 51.225402,
-      'longitude': 6.784314,
-      'zoom': 16
-    },
-    'id': 25
-  },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/5.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg'
-    ],
-    'title': 'The house among olive ',
-    'isPremium': false,
-    'rating': 2,
-    'type': 'house',
-    'bedrooms': 4,
-    'maxAdults': 10,
-    'price': 346,
-    'goods': [
-      'Baby seat',
-      'Laptop friendly workspace',
-      'Air conditioning',
-      'Breakfast',
-      'Washer'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
-    'location': {
-      'latitude': 51.241402,
-      'longitude': 6.782314,
-      'zoom': 16
-    },
-    'id': 26
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/9.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg'
+  //   ],
+  //   'title': 'Penthouse, 4-5 rooms + 5 balconies',
+  //   'isPremium': true,
+  //   'rating': 3.1,
+  //   'type': 'house',
+  //   'bedrooms': 3,
+  //   'maxAdults': 4,
+  //   'price': 632,
+  //   'goods': [
+  //     'Washer',
+  //     'Towels',
+  //     'Laptop friendly workspace',
+  //     'Air conditioning',
+  //     'Breakfast',
+  //     'Fridge',
+  //     'Baby seat'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Peaceful studio in the most wanted area in town. Quiet house Near of everything. Completely renovated. Lovely neighbourhood, lot of trendy shops, restaurants and bars in a walking distance.',
+  //   'location': {
+  //     'latitude': 51.225402,
+  //     'longitude': 6.784314,
+  //     'zoom': 16
+  //   },
+  //   'id': 25
+  // },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/5.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg'
+  //   ],
+  //   'title': 'The house among olive ',
+  //   'isPremium': false,
+  //   'rating': 2,
+  //   'type': 'house',
+  //   'bedrooms': 4,
+  //   'maxAdults': 10,
+  //   'price': 346,
+  //   'goods': [
+  //     'Baby seat',
+  //     'Laptop friendly workspace',
+  //     'Air conditioning',
+  //     'Breakfast',
+  //     'Washer'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
+  //   'location': {
+  //     'latitude': 51.241402,
+  //     'longitude': 6.782314,
+  //     'zoom': 16
+  //   },
+  //   'id': 26
+  // },
   {
     'city': {
       'name': 'Amsterdam',
@@ -1768,63 +1768,63 @@ export const offers = [
     },
     'id': 32
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/19.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg'
-    ],
-    'title': 'The Joshua Tree House',
-    'isPremium': false,
-    'rating': 2.3,
-    'type': 'house',
-    'bedrooms': 2,
-    'maxAdults': 10,
-    'price': 144,
-    'goods': [
-      'Dishwasher',
-      'Laptop friendly workspace',
-      'Air conditioning',
-      'Fridge',
-      'Breakfast',
-      'Towels',
-      'Washer',
-      'Baby seat'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
-    'location': {
-      'latitude': 51.235402,
-      'longitude': 6.800314,
-      'zoom': 16
-    },
-    'id': 33
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/19.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg'
+  //   ],
+  //   'title': 'The Joshua Tree House',
+  //   'isPremium': false,
+  //   'rating': 2.3,
+  //   'type': 'house',
+  //   'bedrooms': 2,
+  //   'maxAdults': 10,
+  //   'price': 144,
+  //   'goods': [
+  //     'Dishwasher',
+  //     'Laptop friendly workspace',
+  //     'Air conditioning',
+  //     'Fridge',
+  //     'Breakfast',
+  //     'Towels',
+  //     'Washer',
+  //     'Baby seat'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
+  //   'location': {
+  //     'latitude': 51.235402,
+  //     'longitude': 6.800314,
+  //     'zoom': 16
+  //   },
+  //   'id': 33
+  // },
   {
     'city': {
       'name': 'Amsterdam',
@@ -1995,62 +1995,62 @@ export const offers = [
     },
     'id': 36
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/20.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg'
-    ],
-    'title': 'The house among olive ',
-    'isPremium': false,
-    'rating': 4,
-    'type': 'house',
-    'bedrooms': 1,
-    'maxAdults': 2,
-    'price': 265,
-    'goods': [
-      'Breakfast',
-      'Air conditioning',
-      'Towels',
-      'Fridge',
-      'Baby seat',
-      'Washer',
-      'Laptop friendly workspace'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
-    'location': {
-      'latitude': 51.204402,
-      'longitude': 6.7773140000000005,
-      'zoom': 16
-    },
-    'id': 37
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/20.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg'
+  //   ],
+  //   'title': 'The house among olive ',
+  //   'isPremium': false,
+  //   'rating': 4,
+  //   'type': 'house',
+  //   'bedrooms': 1,
+  //   'maxAdults': 2,
+  //   'price': 265,
+  //   'goods': [
+  //     'Breakfast',
+  //     'Air conditioning',
+  //     'Towels',
+  //     'Fridge',
+  //     'Baby seat',
+  //     'Washer',
+  //     'Laptop friendly workspace'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
+  //   'location': {
+  //     'latitude': 51.204402,
+  //     'longitude': 6.7773140000000005,
+  //     'zoom': 16
+  //   },
+  //   'id': 37
+  // },
   {
     'city': {
       'name': 'Paris',
@@ -2211,62 +2211,62 @@ export const offers = [
     },
     'id': 40
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/2.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg'
-    ],
-    'title': 'Perfectly located Castro',
-    'isPremium': false,
-    'rating': 2.6,
-    'type': 'room',
-    'bedrooms': 1,
-    'maxAdults': 3,
-    'price': 229,
-    'goods': [
-      'Fridge',
-      'Baby seat',
-      'Towels',
-      'Washer',
-      'Laptop friendly workspace',
-      'Breakfast',
-      'Air conditioning'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'This is a place for dreamers to reset, reflect, and create. Designed with a "slow" pace in mind, our hope is that you enjoy every part of your stay; from making local coffee by drip in the morning, choosing the perfect record to put on as the sun sets.',
-    'location': {
-      'latitude': 51.222402,
-      'longitude': 6.786314,
-      'zoom': 16
-    },
-    'id': 41
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/2.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg'
+  //   ],
+  //   'title': 'Perfectly located Castro',
+  //   'isPremium': false,
+  //   'rating': 2.6,
+  //   'type': 'room',
+  //   'bedrooms': 1,
+  //   'maxAdults': 3,
+  //   'price': 229,
+  //   'goods': [
+  //     'Fridge',
+  //     'Baby seat',
+  //     'Towels',
+  //     'Washer',
+  //     'Laptop friendly workspace',
+  //     'Breakfast',
+  //     'Air conditioning'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'This is a place for dreamers to reset, reflect, and create. Designed with a "slow" pace in mind, our hope is that you enjoy every part of your stay; from making local coffee by drip in the morning, choosing the perfect record to put on as the sun sets.',
+  //   'location': {
+  //     'latitude': 51.222402,
+  //     'longitude': 6.786314,
+  //     'zoom': 16
+  //   },
+  //   'id': 41
+  // },
   {
     'city': {
       'name': 'Amsterdam',
@@ -2436,61 +2436,61 @@ export const offers = [
     },
     'id': 44
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/13.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg'
-    ],
-    'title': 'Nice, cozy, warm big bed apartment',
-    'isPremium': false,
-    'rating': 4.4,
-    'type': 'apartment',
-    'bedrooms': 1,
-    'maxAdults': 2,
-    'price': 492,
-    'goods': [
-      'Breakfast',
-      'Baby seat',
-      'Towels',
-      'Laptop friendly workspace',
-      'Washer',
-      'Air conditioning'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families or friends.',
-    'location': {
-      'latitude': 51.205402,
-      'longitude': 6.7613140000000005,
-      'zoom': 16
-    },
-    'id': 45
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/13.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg'
+  //   ],
+  //   'title': 'Nice, cozy, warm big bed apartment',
+  //   'isPremium': false,
+  //   'rating': 4.4,
+  //   'type': 'apartment',
+  //   'bedrooms': 1,
+  //   'maxAdults': 2,
+  //   'price': 492,
+  //   'goods': [
+  //     'Breakfast',
+  //     'Baby seat',
+  //     'Towels',
+  //     'Laptop friendly workspace',
+  //     'Washer',
+  //     'Air conditioning'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families or friends.',
+  //   'location': {
+  //     'latitude': 51.205402,
+  //     'longitude': 6.7613140000000005,
+  //     'zoom': 16
+  //   },
+  //   'id': 45
+  // },
   {
     'city': {
       'name': 'Amsterdam',
@@ -2607,66 +2607,66 @@ export const offers = [
     },
     'id': 47
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/3.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg'
-    ],
-    'title': 'Loft Studio in the Central Area',
-    'isPremium': false,
-    'rating': 2.5,
-    'type': 'house',
-    'bedrooms': 3,
-    'maxAdults': 5,
-    'price': 230,
-    'goods': [
-      'Washer',
-      'Air conditioning',
-      'Coffee machine',
-      'Breakfast',
-      'Baby seat',
-      'Cable TV',
-      'Washing machine',
-      'Fridge',
-      'Towels',
-      'Laptop friendly workspace',
-      'Dishwasher'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families or friends.',
-    'location': {
-      'latitude': 51.250402,
-      'longitude': 6.7853140000000005,
-      'zoom': 16
-    },
-    'id': 48
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/3.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg'
+  //   ],
+  //   'title': 'Loft Studio in the Central Area',
+  //   'isPremium': false,
+  //   'rating': 2.5,
+  //   'type': 'house',
+  //   'bedrooms': 3,
+  //   'maxAdults': 5,
+  //   'price': 230,
+  //   'goods': [
+  //     'Washer',
+  //     'Air conditioning',
+  //     'Coffee machine',
+  //     'Breakfast',
+  //     'Baby seat',
+  //     'Cable TV',
+  //     'Washing machine',
+  //     'Fridge',
+  //     'Towels',
+  //     'Laptop friendly workspace',
+  //     'Dishwasher'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families or friends.',
+  //   'location': {
+  //     'latitude': 51.250402,
+  //     'longitude': 6.7853140000000005,
+  //     'zoom': 16
+  //   },
+  //   'id': 48
+  // },
   {
     'city': {
       'name': 'Brussels',
@@ -3311,115 +3311,115 @@ export const offers = [
     },
     'id': 60
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/12.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg'
-    ],
-    'title': 'Perfectly located Castro',
-    'isPremium': true,
-    'rating': 2.5,
-    'type': 'house',
-    'bedrooms': 5,
-    'maxAdults': 9,
-    'price': 129,
-    'goods': [
-      'Towels',
-      'Baby seat',
-      'Air conditioning',
-      'Washer',
-      'Fridge',
-      'Breakfast',
-      'Laptop friendly workspace'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
-    'location': {
-      'latitude': 51.211402,
-      'longitude': 6.756314000000001,
-      'zoom': 16
-    },
-    'id': 61
-  },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/12.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg'
-    ],
-    'title': 'The Pondhouse - A Magical Place',
-    'isPremium': false,
-    'rating': 3.8,
-    'type': 'hotel',
-    'bedrooms': 1,
-    'maxAdults': 4,
-    'price': 118,
-    'goods': [
-      'Laptop friendly workspace',
-      'Air conditioning',
-      'Breakfast',
-      'Washer'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Relax, rejuvenate and unplug in this ultimate rustic getaway experience in the country. In our beautiful screened Pondhouse, you can gaze at the stars and listen to the sounds of nature from your cozy warm bed.',
-    'location': {
-      'latitude': 51.210402,
-      'longitude': 6.798314,
-      'zoom': 16
-    },
-    'id': 62
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/12.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg'
+  //   ],
+  //   'title': 'Perfectly located Castro',
+  //   'isPremium': true,
+  //   'rating': 2.5,
+  //   'type': 'house',
+  //   'bedrooms': 5,
+  //   'maxAdults': 9,
+  //   'price': 129,
+  //   'goods': [
+  //     'Towels',
+  //     'Baby seat',
+  //     'Air conditioning',
+  //     'Washer',
+  //     'Fridge',
+  //     'Breakfast',
+  //     'Laptop friendly workspace'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
+  //   'location': {
+  //     'latitude': 51.211402,
+  //     'longitude': 6.756314000000001,
+  //     'zoom': 16
+  //   },
+  //   'id': 61
+  // },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/12.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg'
+  //   ],
+  //   'title': 'The Pondhouse - A Magical Place',
+  //   'isPremium': false,
+  //   'rating': 3.8,
+  //   'type': 'hotel',
+  //   'bedrooms': 1,
+  //   'maxAdults': 4,
+  //   'price': 118,
+  //   'goods': [
+  //     'Laptop friendly workspace',
+  //     'Air conditioning',
+  //     'Breakfast',
+  //     'Washer'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Relax, rejuvenate and unplug in this ultimate rustic getaway experience in the country. In our beautiful screened Pondhouse, you can gaze at the stars and listen to the sounds of nature from your cozy warm bed.',
+  //   'location': {
+  //     'latitude': 51.210402,
+  //     'longitude': 6.798314,
+  //     'zoom': 16
+  //   },
+  //   'id': 62
+  // },
   {
     'city': {
       'name': 'Brussels',
@@ -3477,61 +3477,61 @@ export const offers = [
     },
     'id': 63
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/2.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg'
-    ],
-    'title': 'Amazing and Extremely Central Flat',
-    'isPremium': true,
-    'rating': 4.1,
-    'type': 'room',
-    'bedrooms': 1,
-    'maxAdults': 2,
-    'price': 250,
-    'goods': [
-      'Towels',
-      'Air conditioning',
-      'Washer',
-      'Breakfast',
-      'Baby seat',
-      'Laptop friendly workspace'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
-    'location': {
-      'latitude': 51.243402,
-      'longitude': 6.791314,
-      'zoom': 16
-    },
-    'id': 64
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/2.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg'
+  //   ],
+  //   'title': 'Amazing and Extremely Central Flat',
+  //   'isPremium': true,
+  //   'rating': 4.1,
+  //   'type': 'room',
+  //   'bedrooms': 1,
+  //   'maxAdults': 2,
+  //   'price': 250,
+  //   'goods': [
+  //     'Towels',
+  //     'Air conditioning',
+  //     'Washer',
+  //     'Breakfast',
+  //     'Baby seat',
+  //     'Laptop friendly workspace'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
+  //   'location': {
+  //     'latitude': 51.243402,
+  //     'longitude': 6.791314,
+  //     'zoom': 16
+  //   },
+  //   'id': 64
+  // },
   {
     'city': {
       'name': 'Cologne',
@@ -3753,64 +3753,64 @@ export const offers = [
     },
     'id': 68
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/18.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/10.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg'
-    ],
-    'title': 'The house among olive ',
-    'isPremium': false,
-    'rating': 3,
-    'type': 'room',
-    'bedrooms': 1,
-    'maxAdults': 1,
-    'price': 126,
-    'goods': [
-      'Coffee machine',
-      'Breakfast',
-      'Laptop friendly workspace',
-      'Fridge',
-      'Towels',
-      'Baby seat',
-      'Air conditioning',
-      'Washer',
-      'Dishwasher'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
-    'location': {
-      'latitude': 51.232402,
-      'longitude': 6.800314,
-      'zoom': 16
-    },
-    'id': 69
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/18.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/10.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg'
+  //   ],
+  //   'title': 'The house among olive ',
+  //   'isPremium': false,
+  //   'rating': 3,
+  //   'type': 'room',
+  //   'bedrooms': 1,
+  //   'maxAdults': 1,
+  //   'price': 126,
+  //   'goods': [
+  //     'Coffee machine',
+  //     'Breakfast',
+  //     'Laptop friendly workspace',
+  //     'Fridge',
+  //     'Towels',
+  //     'Baby seat',
+  //     'Air conditioning',
+  //     'Washer',
+  //     'Dishwasher'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
+  //   'location': {
+  //     'latitude': 51.232402,
+  //     'longitude': 6.800314,
+  //     'zoom': 16
+  //   },
+  //   'id': 69
+  // },
   {
     'city': {
       'name': 'Brussels',
@@ -3971,62 +3971,62 @@ export const offers = [
     },
     'id': 72
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/5.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg'
-    ],
-    'title': 'Nice, cozy, warm big bed apartment',
-    'isPremium': false,
-    'rating': 3.2,
-    'type': 'hotel',
-    'bedrooms': 2,
-    'maxAdults': 5,
-    'price': 147,
-    'goods': [
-      'Laptop friendly workspace',
-      'Breakfast',
-      'Fridge',
-      'Air conditioning',
-      'Towels',
-      'Baby seat',
-      'Washer'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
-    'location': {
-      'latitude': 51.237402,
-      'longitude': 6.797314,
-      'zoom': 16
-    },
-    'id': 73
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/5.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg'
+  //   ],
+  //   'title': 'Nice, cozy, warm big bed apartment',
+  //   'isPremium': false,
+  //   'rating': 3.2,
+  //   'type': 'hotel',
+  //   'bedrooms': 2,
+  //   'maxAdults': 5,
+  //   'price': 147,
+  //   'goods': [
+  //     'Laptop friendly workspace',
+  //     'Breakfast',
+  //     'Fridge',
+  //     'Air conditioning',
+  //     'Towels',
+  //     'Baby seat',
+  //     'Washer'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Discover daily local life in city center, friendly neighborhood, clandestine casino, karaoke, old-style artisans, art gallery and artist studio downstairs.',
+  //   'location': {
+  //     'latitude': 51.237402,
+  //     'longitude': 6.797314,
+  //     'zoom': 16
+  //   },
+  //   'id': 73
+  // },
   {
     'city': {
       'name': 'Brussels',
@@ -4509,59 +4509,59 @@ export const offers = [
     },
     'id': 82
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/12.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/11.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg',
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/19.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/8.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/20.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/15.jpg'
-    ],
-    'title': 'Beautiful & luxurious apartment at great location',
-    'isPremium': false,
-    'rating': 4.8,
-    'type': 'room',
-    'bedrooms': 1,
-    'maxAdults': 1,
-    'price': 117,
-    'goods': [
-      'Air conditioning',
-      'Breakfast',
-      'Laptop friendly workspace',
-      'Washer'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'Relax, rejuvenate and unplug in this ultimate rustic getaway experience in the country. In our beautiful screened Pondhouse, you can gaze at the stars and listen to the sounds of nature from your cozy warm bed.',
-    'location': {
-      'latitude': 51.214402,
-      'longitude': 6.764314000000001,
-      'zoom': 16
-    },
-    'id': 83
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/12.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/11.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg',
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/19.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/8.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/20.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/15.jpg'
+  //   ],
+  //   'title': 'Beautiful & luxurious apartment at great location',
+  //   'isPremium': false,
+  //   'rating': 4.8,
+  //   'type': 'room',
+  //   'bedrooms': 1,
+  //   'maxAdults': 1,
+  //   'price': 117,
+  //   'goods': [
+  //     'Air conditioning',
+  //     'Breakfast',
+  //     'Laptop friendly workspace',
+  //     'Washer'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'Relax, rejuvenate and unplug in this ultimate rustic getaway experience in the country. In our beautiful screened Pondhouse, you can gaze at the stars and listen to the sounds of nature from your cozy warm bed.',
+  //   'location': {
+  //     'latitude': 51.214402,
+  //     'longitude': 6.764314000000001,
+  //     'zoom': 16
+  //   },
+  //   'id': 83
+  // },
   {
     'city': {
       'name': 'Amsterdam',
@@ -4671,59 +4671,59 @@ export const offers = [
     },
     'id': 85
   },
-  {
-    'city': {
-      'name': 'Dusseldorf',
-      'location': {
-        'latitude': 51.225402,
-        'longitude': 6.776314,
-        'zoom': 13
-      }
-    },
-    'previewImage': 'https://12.react.pages.academy/static/hotel/9.jpg',
-    'images': [
-      'https://12.react.pages.academy/static/hotel/14.jpg',
-      'https://12.react.pages.academy/static/hotel/17.jpg',
-      'https://12.react.pages.academy/static/hotel/2.jpg',
-      'https://12.react.pages.academy/static/hotel/18.jpg',
-      'https://12.react.pages.academy/static/hotel/7.jpg',
-      'https://12.react.pages.academy/static/hotel/16.jpg',
-      'https://12.react.pages.academy/static/hotel/13.jpg',
-      'https://12.react.pages.academy/static/hotel/12.jpg',
-      'https://12.react.pages.academy/static/hotel/4.jpg',
-      'https://12.react.pages.academy/static/hotel/9.jpg',
-      'https://12.react.pages.academy/static/hotel/1.jpg',
-      'https://12.react.pages.academy/static/hotel/5.jpg',
-      'https://12.react.pages.academy/static/hotel/6.jpg',
-      'https://12.react.pages.academy/static/hotel/3.jpg'
-    ],
-    'title': 'The Pondhouse - A Magical Place',
-    'isPremium': true,
-    'rating': 5,
-    'type': 'apartment',
-    'bedrooms': 4,
-    'maxAdults': 8,
-    'price': 276,
-    'goods': [
-      'Breakfast',
-      'Washer',
-      'Air conditioning',
-      'Laptop friendly workspace'
-    ],
-    'host': {
-      'id': 25,
-      'name': 'Angelina',
-      'isPro': true,
-      'avatarUrl': 'img/avatar-angelina.jpg'
-    },
-    'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
-    'location': {
-      'latitude': 51.237402,
-      'longitude': 6.779314,
-      'zoom': 16
-    },
-    'id': 86
-  },
+  // {
+  //   'city': {
+  //     'name': 'Dusseldorf',
+  //     'location': {
+  //       'latitude': 51.225402,
+  //       'longitude': 6.776314,
+  //       'zoom': 13
+  //     }
+  //   },
+  //   'previewImage': 'https://12.react.pages.academy/static/hotel/9.jpg',
+  //   'images': [
+  //     'https://12.react.pages.academy/static/hotel/14.jpg',
+  //     'https://12.react.pages.academy/static/hotel/17.jpg',
+  //     'https://12.react.pages.academy/static/hotel/2.jpg',
+  //     'https://12.react.pages.academy/static/hotel/18.jpg',
+  //     'https://12.react.pages.academy/static/hotel/7.jpg',
+  //     'https://12.react.pages.academy/static/hotel/16.jpg',
+  //     'https://12.react.pages.academy/static/hotel/13.jpg',
+  //     'https://12.react.pages.academy/static/hotel/12.jpg',
+  //     'https://12.react.pages.academy/static/hotel/4.jpg',
+  //     'https://12.react.pages.academy/static/hotel/9.jpg',
+  //     'https://12.react.pages.academy/static/hotel/1.jpg',
+  //     'https://12.react.pages.academy/static/hotel/5.jpg',
+  //     'https://12.react.pages.academy/static/hotel/6.jpg',
+  //     'https://12.react.pages.academy/static/hotel/3.jpg'
+  //   ],
+  //   'title': 'The Pondhouse - A Magical Place',
+  //   'isPremium': true,
+  //   'rating': 5,
+  //   'type': 'apartment',
+  //   'bedrooms': 4,
+  //   'maxAdults': 8,
+  //   'price': 276,
+  //   'goods': [
+  //     'Breakfast',
+  //     'Washer',
+  //     'Air conditioning',
+  //     'Laptop friendly workspace'
+  //   ],
+  //   'host': {
+  //     'id': 25,
+  //     'name': 'Angelina',
+  //     'isPro': true,
+  //     'avatarUrl': 'img/avatar-angelina.jpg'
+  //   },
+  //   'description': 'I am happy to welcome you to my apartment in the city center! Three words: location, cosy and chic!',
+  //   'location': {
+  //     'latitude': 51.237402,
+  //     'longitude': 6.779314,
+  //     'zoom': 16
+  //   },
+  //   'id': 86
+  // },
   {
     'city': {
       'name': 'Paris',
