@@ -28,7 +28,7 @@ function App(): JSX.Element {
         <Routes>
           <Route
             path="/"
-            element={<MainPage offers={offersOfCity} />}
+            element={<MainPage currentCity={cityName} offers={offersOfCity} />}
           />
           <Route
             path={AppRoute.Login}
