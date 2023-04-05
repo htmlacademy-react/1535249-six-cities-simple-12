@@ -1,3 +1,11 @@
+export const AUTH_TOKEN_KEY_NAME = 'six-cities-simple-12';
+export const BACKEND_URL = 'https://12.react.pages.academy/six-cities-simple';
+export const REQUEST_TIMEOUT = 5000;
+
+export enum APIRoute {
+  Offers = '/hotels',
+}
+
 export enum AppRoute {
   Login = '/login',
   NotFound = '*',
