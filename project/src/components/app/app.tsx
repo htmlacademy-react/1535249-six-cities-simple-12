@@ -14,11 +14,22 @@ import NotFoundPage from '../../pages/not-found-page/not-found-page';
 import { reviews } from '../../mocks/reviews';
 
 import { useAppSelector } from '../../hooks';
+import LoadingScreen from '../../pages/loading-screen/loading-screen';
 
 
 function App(): JSX.Element {
   const cityName = useAppSelector((state) => state.cityName); //current city
-  const offers = useAppSelector((state) => state.offers); // all offers
+  // eslint-disable-next-line arrow-body-style
+  const offers = useAppSelector((state) => {
+    return state.offers;
+  }); // all offers
+  const isOffersCompleting = useAppSelector((state) => state.isOffersCompleting);
+
+  if (isOffersCompleting) {
+    return (
+      <LoadingScreen />
+    );
+  }
 
   const offersOfCity = offers.filter((offer) => offer.city.name === cityName);
 
