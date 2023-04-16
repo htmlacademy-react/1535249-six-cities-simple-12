@@ -11,18 +11,13 @@ import LoginPage from '../../pages/login-page/login-page';
 import OfferPage from '../../pages/offer-page/offer-page';
 import NotFoundPage from '../../pages/not-found-page/not-found-page';
 
-import { reviews } from '../../mocks/reviews';
-
 import { useAppSelector } from '../../hooks';
 import LoadingScreen from '../../pages/loading-screen/loading-screen';
 
 
 function App(): JSX.Element {
   const cityName = useAppSelector((state) => state.cityName); //current city
-  // eslint-disable-next-line arrow-body-style
-  const offers = useAppSelector((state) => {
-    return state.offers;
-  }); // all offers
+  const offers = useAppSelector((state) => state.offers); // all offers
   const isOffersCompleting = useAppSelector((state) => state.isOffersCompleting);
 
   if (isOffersCompleting) {
@@ -39,7 +34,12 @@ function App(): JSX.Element {
         <Routes>
           <Route
             path="/"
-            element={<MainPage currentCity={cityName} offers={offersOfCity} />}
+            element={
+              <MainPage
+                currentCity={cityName}
+                offers={offersOfCity}
+              />
+            }
           />
           <Route
             path={AppRoute.Login}
@@ -52,10 +52,7 @@ function App(): JSX.Element {
           <Route
             path={AppRoute.Property}
             element={
-              <OfferPage
-                reviews={reviews}
-                offers={offers}
-              />
+              <OfferPage/>
             }
           />
         </Routes>

@@ -1,31 +1,50 @@
-import {Helmet} from 'react-helmet-async';
+import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
-import Logo from '../../components/logo/logo';
+import { useAppDispatch, useAppSelector } from '../../hooks';
+
+import {
+  fetchActiveOfferAction,
+  fetchCommentsAction,
+  fetchNearbyActiveOfferAction,
+} from '../../store/api-actions';
+
+import Header from '../../components/header/header';
 import { getStarRating } from '../../components/place-card/place-card';
 import ReviewsForm from '../../components/reviews-form/reviews-form';
 import Comment from '../../components/comment/comment';
 import Map from '../../components/map/map';
 import NearPlacesList from '../../components/near-places-list/near-places-list';
 
-import { Offers, Offer } from '../../types/offer';
-import { Reviews } from '../../types/review';
+import NotFoundPage from '../not-found-page/not-found-page';
+import LoadingScreen from '../loading-screen/loading-screen';
 
-import { MapLocation } from '../../const';
+import { AuthorizationStatus, MapLocation } from '../../const';
 
-type OfferPageProps = {
-  offers: Offers;
-  reviews: Reviews;
-}
-
-function OfferPage({offers, reviews}: OfferPageProps): JSX.Element {
+function OfferPage(): JSX.Element {
   const {id} = useParams();
+  const activeOfferId = Number(id);
+  const dispatch = useAppDispatch();
 
-  const offer: Offer | undefined = offers.find((room) => room.id === Number(id));
-  if (!offer) {
-    throw new Error('Url не существует');
+  const activeOffer = useAppSelector((state) => state.activeOffer);
+  const reviews = useAppSelector((state) => state.reviews);
+  const nearbyActiveOffers = useAppSelector((state) => state.nearbyActiveOffers);
+  const authorizationStatus = useAppSelector((state) => state.authorizationStatus);
+
+  useEffect(() => {
+    dispatch(fetchActiveOfferAction(activeOfferId));
+    dispatch(fetchCommentsAction(activeOfferId));
+    dispatch(fetchNearbyActiveOfferAction(activeOfferId));
+
+  }, [dispatch, activeOfferId]);
+
+  if (isNaN(activeOfferId)) {
+    return <NotFoundPage />;
   }
 
-  const {images, isPremium, type, title, rating, bedrooms, maxAdults, price, goods, host, description,} = offer;
+  if (!activeOffer) {
+    return <LoadingScreen />;
+  }
 
   return (
     <div className="page">
@@ -34,37 +53,14 @@ function OfferPage({offers, reviews}: OfferPageProps): JSX.Element {
           Шесть городов. Страница предложения
         </title>
       </Helmet>
-      <header className="header">
-        <div className="container">
-          <div className="header__wrapper">
-            <div className="header__left">
-              <Logo />
-            </div>
-            <nav className="header__nav">
-              <ul className="header__nav-list">
-                <li className="header__nav-item user">
-                  <div className="header__nav-profile">
-                    <div className="header__avatar-wrapper user__avatar-wrapper"></div>
-                    <span className="header__user-name user__name">Oliver.conner@gmail.com</span>
-                  </div>
-                </li>
-                <li className="header__nav-item">
-                  <a className="header__nav-link" href="#todo">
-                    <span className="header__signout">Sign out</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="page__main page__main--property">
         <section className="property">
           <div className="property__gallery-container container">
             <div className="property__gallery">
               {
-                images.map((image) => (
+                activeOffer.images.map((image) => (
                   <div className="property__image-wrapper" key={image}>
                     <img className="property__image" src={image} alt=""/>
                   </div>
@@ -74,41 +70,45 @@ function OfferPage({offers, reviews}: OfferPageProps): JSX.Element {
           </div>
           <div className="property__container container">
             <div className="property__wrapper">
-              <div className="property__mark">
-                {isPremium ? <span>Premium</span> : ''}
-              </div>
+              {
+                activeOffer.isPremium ?
+                  <div className="property__mark">
+                    <span>Premium</span>
+                  </div> :
+                  ''
+              }
               <div className="property__name-wrapper">
                 <h1 className="property__name">
-                  {title}
+                  {activeOffer.title}
                 </h1>
               </div>
               <div className="property__rating rating">
                 <div className="property__stars rating__stars">
-                  <span style={{width: `${getStarRating(rating)}`}}></span>
+                  <span style={{width: `${getStarRating(activeOffer.rating)}%`}}></span>
                   <span className="visually-hidden">Rating</span>
                 </div>
-                <span className="property__rating-value rating__value">{rating}</span>
+                <span className="property__rating-value rating__value">{activeOffer.rating}</span>
               </div>
               <ul className="property__features">
                 <li className="property__feature property__feature--entire">
-                  {type}
+                  {activeOffer.type}
                 </li>
                 <li className="property__feature property__feature--bedrooms">
-                  {bedrooms} Bedrooms
+                  {activeOffer.bedrooms} Bedrooms
                 </li>
                 <li className="property__feature property__feature--adults">
-                  Max {maxAdults} adults
+                  Max {activeOffer.maxAdults} adults
                 </li>
               </ul>
               <div className="property__price">
-                <b className="property__price-value">&euro;{price}</b>
+                <b className="property__price-value">&euro;{activeOffer.price}</b>
                 <span className="property__price-text">&nbsp;night</span>
               </div>
               <div className="property__inside">
                 <h2 className="property__inside-title">What&apos;s inside</h2>
                 <ul className="property__inside-list">
                   {
-                    goods.map((good) => (
+                    activeOffer.goods.map((good) => (
                       <li className="property__inside-item" key={good}>
                         {good}
                       </li>
@@ -120,18 +120,18 @@ function OfferPage({offers, reviews}: OfferPageProps): JSX.Element {
                 <h2 className="property__host-title">Meet the host</h2>
                 <div className="property__host-user user">
                   <div className="property__avatar-wrapper property__avatar-wrapper--pro user__avatar-wrapper">
-                    <img className="property__avatar user__avatar" src={host.avatarUrl} width="74" height="74" alt="Host avatar"/>
+                    <img className="property__avatar user__avatar" src={activeOffer.host.avatarUrl} width="74" height="74" alt="Host avatar"/>
                   </div>
                   <span className="property__user-name">
-                    {host.name}
+                    {activeOffer.host.name}
                   </span>
                   <span className="property__user-status">
-                    {host.isPro ? 'Pro' : ''}
+                    {activeOffer.host.isPro ? 'Pro' : ''}
                   </span>
                 </div>
                 <div className="property__description">
                   <p className="property__text">
-                    {description}
+                    {activeOffer.description}
                   </p>
                 </div>
               </div>
@@ -140,16 +140,16 @@ function OfferPage({offers, reviews}: OfferPageProps): JSX.Element {
                 <ul className="reviews__list">
                   {reviews.map((comment) => <Comment review={comment} key={comment.id}/>)}
                 </ul>
-                <ReviewsForm />
+                {authorizationStatus === AuthorizationStatus.Auth && <ReviewsForm activeOfferId={activeOfferId}/>}
               </section>
             </div>
-            <Map city={offer.city} offers={offers} selectedOffer={offer} mapLocation={MapLocation.property}/>
+            <Map city={activeOffer.city} offers={nearbyActiveOffers} selectedOffer={activeOffer} mapLocation={MapLocation.property}/>
           </div>
         </section>
         <div className="container">
           <section className="near-places places">
             <h2 className="near-places__title">Other places in the neighbourhood</h2>
-            <NearPlacesList offers={offers} />
+            <NearPlacesList offers={nearbyActiveOffers} />
           </section>
         </div>
       </main>
