@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import {Helmet} from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import Header from '../../components/header/header';
 import LocationsList from '../../components/locations-list/locations-list';
 import MainPageEmpty from '../main-page-empty/main-page-empty';
