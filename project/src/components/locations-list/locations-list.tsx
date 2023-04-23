@@ -1,5 +1,5 @@
 import { useAppDispatch } from '../../hooks';
-import { changeCity } from '../../store/action';
+import { changeCity } from '../../store/offer-process/offer-process';
 import { CITIES_NAME } from '../../const';
 import LocationsItem from '../locations-item/locations-item';
 

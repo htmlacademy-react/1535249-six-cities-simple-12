@@ -2,10 +2,11 @@ import { useAppSelector } from '../../hooks';
 import Logo from '../../components/logo/logo';
 import { AuthorizationStatus } from '../../const';
 import { NavProfileAuth, NavProfileNoAuth } from '../../components/authorization/authorization';
+import { getAuthorizationStatus, getUserData } from '../../store/user-process/selectors';
 
 function Header(): JSX.Element {
-  const authorizationStatus = useAppSelector((state) => state.authorizationStatus);
-  const user = useAppSelector((state) => state.userData);
+  const authorizationStatus = useAppSelector(getAuthorizationStatus);
+  const user = useAppSelector(getUserData);
 
   return (
     <header className="header">
@@ -19,7 +20,7 @@ function Header(): JSX.Element {
               {
                 (authorizationStatus === AuthorizationStatus.Auth && user)
                   ?
-                  <NavProfileAuth user={user} />
+                  <NavProfileAuth user={ user } />
                   :
                   <NavProfileNoAuth />
               }
