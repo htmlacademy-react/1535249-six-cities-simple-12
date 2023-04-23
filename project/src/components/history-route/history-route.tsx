@@ -22,12 +22,12 @@ function HistoryRouter({
 
   return (
     <Router
-      basename={basename}
-      location={state.location}
-      navigationType={state.action}
-      navigator={history}
+      basename={ basename }
+      location={ state.location }
+      navigationType={ state.action }
+      navigator={ history }
     >
-      {children}
+      { children }
     </Router>
   );
 }

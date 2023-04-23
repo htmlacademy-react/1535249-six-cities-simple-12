@@ -11,7 +11,7 @@ type CitiesPlacesListProps = {
   onPlaceCardHover: (id: number | null) => void;
 }
 
-function CitiesPlacesList({offers, onPlaceCardHover}: CitiesPlacesListProps): JSX.Element {
+function CitiesPlacesList({ offers, onPlaceCardHover }: CitiesPlacesListProps): JSX.Element {
   const [placesSortingType, setPlacesSortingType] = useState<string>('Popular');
 
   const sortedOffers = sortingByType(offers, placesSortingType);
@@ -19,17 +19,17 @@ function CitiesPlacesList({offers, onPlaceCardHover}: CitiesPlacesListProps): JS
   return (
     <>
       <PlacesSorting
-        placesSortingTypes={PlacesSortingTypes}
-        currentPlacesSortingType={placesSortingType}
-        setPlacesSortingType={setPlacesSortingType}
+        placesSortingTypes={ PlacesSortingTypes }
+        currentPlacesSortingType={ placesSortingType }
+        setPlacesSortingType={ setPlacesSortingType }
       />
       <div className="cities__places-list places__list tabs__content">
         {
           sortedOffers.map((offer) => (
             <PlaceCard
-              offer={offer}
-              location={PlaceCardLocation.cities}
-              key={offer.id}
+              offer={ offer }
+              location={ PlaceCardLocation.cities }
+              key={ offer.id }
               onMouseEnter={() => onPlaceCardHover(offer.id)}
               onMouseLeave={() => onPlaceCardHover(null)}
             />

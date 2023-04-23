@@ -19,8 +19,8 @@ import {
 } from '../../store/offer-process/selectors';
 
 function App(): JSX.Element {
-  const cityName = useAppSelector(getCityName); //current city
-  const offers = useAppSelector(getOffers); // all offers
+  const cityName = useAppSelector(getCityName);
+  const offers = useAppSelector(getOffers);
   const isOffersCompleting = useAppSelector(getOffersDataCompletingStatus);
 
   if (isOffersCompleting) {
@@ -33,27 +33,27 @@ function App(): JSX.Element {
 
   return (
     <HelmetProvider>
-      <HistoryRouter history={browserHistory}>
+      <HistoryRouter history={ browserHistory }>
         <Routes>
           <Route
             path="/"
             element={
               <MainPage
-                currentCity={cityName}
-                offers={offersOfCity}
+                currentCity={ cityName }
+                offers={ offersOfCity }
               />
             }
           />
           <Route
-            path={AppRoute.Login}
-            element={<LoginPage />}
+            path={ AppRoute.Login }
+            element={ <LoginPage /> }
           />
           <Route
             path="*"
-            element={<NotFoundPage />}
+            element={ <NotFoundPage /> }
           />
           <Route
-            path={AppRoute.Property}
+            path={ AppRoute.Property }
             element={
               <OfferPage/>
             }

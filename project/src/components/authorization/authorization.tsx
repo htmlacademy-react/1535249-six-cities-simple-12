@@ -6,7 +6,7 @@ import { UserData } from '../../types/user-data';
 
 type NavProfileAuthProps = {user: UserData};
 
-export const NavProfileAuth = ({user}: NavProfileAuthProps) => {
+export const NavProfileAuth = ({ user }: NavProfileAuthProps) => {
   const dispatch = useAppDispatch();
 
   const signOutClickHandler = (evt: React.MouseEvent<HTMLElement>) => {
@@ -19,14 +19,14 @@ export const NavProfileAuth = ({user}: NavProfileAuthProps) => {
       <li className="header__nav-item user">
         <div className="header__nav-profile">
           <div className="header__avatar-wrapper user__avatar-wrapper"></div>
-          <span className="header__user-name user__name">{user.email}</span>
+          <span className="header__user-name user__name">{ user.email }</span>
         </div>
       </li>
       <li className="header__nav-item">
         <Link
           className="header__nav-link"
           to="/"
-          onClick={signOutClickHandler}
+          onClick={ signOutClickHandler }
         >
           <span className="header__signout">Sign out</span>
         </Link>
@@ -39,7 +39,7 @@ export const NavProfileNoAuth = () => (
   <li className="header__nav-item user">
     <Link
       className="header__nav-link header__nav-link--profile"
-      to={AppRoute.Login}
+      to={ AppRoute.Login }
     >
       <div className="header__avatar-wrapper user__avatar-wrapper"></div>
       <span className="header__login">Sign in</span>

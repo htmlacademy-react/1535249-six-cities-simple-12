@@ -5,10 +5,20 @@ import { useAppDispatch, useAppSelector } from '../../hooks';
 import { AuthData } from '../../types/auth-data';
 import Logo from '../../components/logo/logo';
 import { loginAction } from '../../store/api-actions';
-import { AppRoute, AuthorizationStatus } from '../../const';
+import {
+  AppRoute,
+  AuthorizationStatus,
+  CITIES_NAME,
+  LocationItemLinkPosition
+} from '../../const';
+import { changeCity } from '../../store/offer-process/offer-process';
 import { getAuthorizationStatus } from '../../store/user-process/selectors';
+import LocationsItemLink from '../../components/locations-item-link/locations-item-link';
+import { redirectToRoute } from '../../store/action';
 
 function LoginPage(): JSX.Element {
+  const randomCityName = CITIES_NAME[Math.floor(Math.random() * CITIES_NAME.length)];
+
   const loginRef = useRef<HTMLInputElement | null>(null);
   const passwordRef = useRef<HTMLInputElement | null>(null);
   const dispatch = useAppDispatch();
@@ -73,7 +83,7 @@ function LoginPage(): JSX.Element {
               <div className="login__input-wrapper form__input-wrapper">
                 <label className="visually-hidden">E-mail</label>
                 <input
-                  ref={loginRef}
+                  ref={ loginRef }
                   className="login__input form__input"
                   type="email"
                   name="email"
@@ -84,7 +94,7 @@ function LoginPage(): JSX.Element {
               <div className="login__input-wrapper form__input-wrapper">
                 <label className="visually-hidden">Password</label>
                 <input
-                  ref={passwordRef}
+                  ref={ passwordRef }
                   className="login__input form__input"
                   type="password"
                   name="password"
@@ -97,9 +107,14 @@ function LoginPage(): JSX.Element {
           </section>
           <section className="locations locations--login locations--current">
             <div className="locations__item">
-              <a className="locations__item-link" href="#todo">
-                <span>Amsterdam</span>
-              </a>
+              <LocationsItemLink
+                position={ LocationItemLinkPosition.login }
+                locationsItemName={ randomCityName }
+                onClick={ (locationItemName) => {
+                  dispatch(changeCity(locationItemName));
+                  dispatch(redirectToRoute(AppRoute.Main));
+                }}
+              />
             </div>
           </section>
         </div>

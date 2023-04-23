@@ -9,7 +9,7 @@ type ReviewsFormProps = {
   activeOfferId: number;
 }
 
-function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
+function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
   const dispatch = useAppDispatch();
 
   const [formData, setFormData] = useState({
@@ -30,7 +30,7 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
 
   const fieldChangeHandle = (evt: ChangeEvent <HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = evt.target;
-    setFormData({...formData, [name]: value});
+    setFormData({ ...formData, [name]: value });
     setSubmitDisabled(
       formData.rating === '' ||
       formData.review.length < MIN_COMMENT_LENGTH ||
@@ -66,8 +66,8 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
           value="5"
           id="5-stars"
           type="radio"
-          checked={formData.rating === '5'}
-          onChange={fieldChangeHandle}
+          checked={ formData.rating === '5' }
+          onChange={ fieldChangeHandle }
         />
         <label htmlFor="5-stars" className="reviews__rating-label form__rating-label" title="perfect">
           <svg className="form__star-image" width="37" height="33">
@@ -81,8 +81,8 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
           value="4"
           id="4-stars"
           type="radio"
-          checked={formData.rating === '4'}
-          onChange={fieldChangeHandle}
+          checked={ formData.rating === '4' }
+          onChange={ fieldChangeHandle }
         />
         <label htmlFor="4-stars" className="reviews__rating-label form__rating-label" title="good">
           <svg className="form__star-image" width="37" height="33">
@@ -96,8 +96,8 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
           value="3"
           id="3-stars"
           type="radio"
-          checked={formData.rating === '3'}
-          onChange={fieldChangeHandle}
+          checked={ formData.rating === '3' }
+          onChange={ fieldChangeHandle }
         />
         <label htmlFor="3-stars" className="reviews__rating-label form__rating-label" title="not bad">
           <svg className="form__star-image" width="37" height="33">
@@ -111,8 +111,8 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
           value="2"
           id="2-stars"
           type="radio"
-          checked={formData.rating === '2'}
-          onChange={fieldChangeHandle}
+          checked={ formData.rating === '2' }
+          onChange={ fieldChangeHandle }
         />
         <label htmlFor="2-stars" className="reviews__rating-label form__rating-label" title="badly">
           <svg className="form__star-image" width="37" height="33">
@@ -126,8 +126,8 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
           value="1"
           id="1-star"
           type="radio"
-          checked={formData.rating === '1'}
-          onChange={fieldChangeHandle}
+          checked={ formData.rating === '1' }
+          onChange={ fieldChangeHandle }
         />
         <label htmlFor="1-star" className="reviews__rating-label form__rating-label" title="terribly">
           <svg className="form__star-image" width="37" height="33">
@@ -140,8 +140,8 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
         id="review"
         name="review"
         placeholder="Tell how was your stay, what you like and what can be improved"
-        value={formData.review}
-        onChange={fieldChangeHandle}
+        value={ formData.review }
+        onChange={ fieldChangeHandle }
       >
       </textarea>
       <div className="reviews__button-wrapper">
@@ -151,7 +151,7 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
         <button
           className="reviews__submit form__submit button"
           type="submit"
-          disabled={isSubmitDisabled}
+          disabled={ isSubmitDisabled }
         >
           Submit
         </button>
