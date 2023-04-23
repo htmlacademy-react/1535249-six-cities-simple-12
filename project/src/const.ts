@@ -1,7 +1,6 @@
 export const AUTH_TOKEN_KEY_NAME = 'six-cities-simple-12';
 export const BACKEND_URL = 'https://12.react.pages.academy/six-cities-simple';
 export const REQUEST_TIMEOUT = 5000;
-export const TIMEOUT_SHOW_ERROR = 2000;
 
 export enum APIRoute {
   Offers = '/hotels',
@@ -23,6 +22,11 @@ export enum AuthorizationStatus {
   Unknow = 'UNKNOW',
 }
 
+export enum NameSpace {
+  Data = 'DATA',
+  User = 'USER',
+}
+
 export enum PlaceCardLocation {
   cities = 'cities',
   nearPlaces = 'nearPlaces',
@@ -33,6 +37,7 @@ export enum MapLocation {
   property = 'property',
 }
 
+export const GALLERY_IMG_COUNT = 6;
 export const MIN_RATING = 0;
 export const MAX_RATING = 5;
 export const MIN_COMMENT_LENGTH = 50;

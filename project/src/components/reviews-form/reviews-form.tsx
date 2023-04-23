@@ -1,8 +1,9 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
-import { useAppDispatch } from '../../hooks';
+import { ChangeEvent, FormEvent, useState, useEffect } from 'react';
+import { useAppDispatch, useAppSelector } from '../../hooks';
 import { MIN_COMMENT_LENGTH, MAX_COMMENT_LENGTH} from '../../const';
 import { ReviewData } from '../../types/review-data';
 import { fetchAddNewComment, fetchCommentsAction } from '../../store/api-actions';
+import { createReviewIsSuccess } from '../../store/offer-process/selectors';
 
 type ReviewsFormProps = {
   activeOfferId: number;
@@ -15,27 +16,35 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
     rating: '',
     review: '',
   });
+  const [isSubmitDisabled, setSubmitDisabled] = useState(true);
+  const isSuccess = useAppSelector(createReviewIsSuccess);
 
-  const [/*submitStatus*/, setSubmitStatus] = useState(false);
+  useEffect(() => {
+    if (isSuccess) {
+      setFormData({
+        rating: '',
+        review: '',
+      });
+    }
+  }, [isSuccess]);
 
   const fieldChangeHandle = (evt: ChangeEvent <HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = evt.target;
     setFormData({...formData, [name]: value});
+    setSubmitDisabled(
+      formData.rating === '' ||
+      formData.review.length < MIN_COMMENT_LENGTH ||
+      formData.review.length > MAX_COMMENT_LENGTH
+    );
   };
-
-  const isDisabled = () => formData.rating === '' &&
-    formData.review.length < MIN_COMMENT_LENGTH &&
-    formData.review.length > MAX_COMMENT_LENGTH;
 
   const onSubmit = ({ review, offerId }: ReviewData) => {
     dispatch(fetchAddNewComment({ review, offerId }));
     dispatch(fetchCommentsAction(offerId));
-    setSubmitStatus(false);
   };
 
   const submitHandle = (evt: FormEvent <HTMLFormElement>) => {
     evt.preventDefault();
-    setSubmitStatus(true);
     if (formData.rating !== '' && formData.review !== '') {
       onSubmit({
         offerId: activeOfferId,
@@ -43,10 +52,6 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
           comment: formData.review,
           rating: Number(formData.rating),
         }
-      });
-      setFormData({
-        rating: '',
-        review: '',
       });
     }
   };
@@ -146,7 +151,7 @@ function ReviewsForm({activeOfferId}: ReviewsFormProps): JSX.Element {
         <button
           className="reviews__submit form__submit button"
           type="submit"
-          disabled={isDisabled()}
+          disabled={isSubmitDisabled}
         >
           Submit
         </button>

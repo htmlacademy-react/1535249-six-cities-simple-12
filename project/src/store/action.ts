@@ -6,7 +6,6 @@ import { UserData } from '../types/user-data';
 import { ReviewData } from '../types/review-data';
 
 export const Action = {
-  CHANGE_CITY: 'CHANGE_CITY',
   COMPLETE_OFFERS: 'COMPLETE_OFFERS',
   COMPLETE_ACTIVE_OFFER: 'COMPLETE_ACTIVE_OFFER',
   COMPLETE_REVIEWS: 'COMPLETE_REVIEWS',
@@ -19,8 +18,6 @@ export const Action = {
   REDIRECT_TO_ROUTE: 'REDIRECT_TO_ROUTE',
   UPDATE_USER: 'UPDATE_USER',
 };
-
-export const changeCity = createAction<string>(Action.CHANGE_CITY);
 
 export const completeOffers = createAction<Offers>(Action.COMPLETE_OFFERS);
 
@@ -35,8 +32,6 @@ export const completeActiveOfferNearby = createAction<Offers>(Action.COMPLETE_AC
 export const setOffersCompletingStatus = createAction<boolean>(Action.SET_OFFERS_COMPLETING_STATUS);
 
 export const setActiveOfferCompletingStatus = createAction<boolean>(Action.SET_ACTIVE_OFFER_COMPLETING_STATUS);
-
-export const setError = createAction<string | null>(Action.SET_ERROR);
 
 export const requireAuthorization = createAction<AuthorizationStatus>(Action.REQUIRE_AUTHORIZATION);
 
