@@ -28,14 +28,17 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
     }
   }, [isSuccess]);
 
-  const fieldChangeHandle = (evt: ChangeEvent <HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = evt.target;
-    setFormData({ ...formData, [name]: value });
+  useEffect(() => {
     setSubmitDisabled(
       formData.rating === '' ||
       formData.review.length < MIN_COMMENT_LENGTH ||
       formData.review.length > MAX_COMMENT_LENGTH
     );
+  }, [formData, isSubmitDisabled]);
+
+  const fieldChangeHandle = (evt: ChangeEvent <HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = evt.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   const onSubmit = ({ review, offerId }: ReviewData) => {
