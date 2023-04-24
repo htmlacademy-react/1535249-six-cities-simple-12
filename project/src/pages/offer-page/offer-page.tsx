@@ -161,7 +161,12 @@ function OfferPage(): JSX.Element {
                 { authorizationStatus === AuthorizationStatus.Auth && <ReviewsForm activeOfferId={ activeOfferId }/> }
               </section>
             </div>
-            <Map city={ activeOffer.city } offers={ nearbyActiveOffers } selectedOffer={ activeOffer } mapLocation={ MapLocation.property }/>
+            <Map
+              city={ activeOffer.city }
+              offers={ [...nearbyActiveOffers, activeOffer] }
+              selectedOffer={ activeOffer }
+              mapLocation={ MapLocation.property }
+            />
           </div>
         </section>
         <div className="container">
