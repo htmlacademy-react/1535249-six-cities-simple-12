@@ -25,7 +25,7 @@ const currentCustomIcon = new Icon({
   iconAnchor: [20, 40]
 });
 
-function Map({city, offers, selectedOffer, mapLocation}: MapProps): JSX.Element {
+function Map({ city, offers, selectedOffer, mapLocation }: MapProps): JSX.Element {
   const mapRef = useRef(null);
   const map = useMap(mapRef, city);
   const mapClass = classNames('map', {
@@ -35,7 +35,6 @@ function Map({city, offers, selectedOffer, mapLocation}: MapProps): JSX.Element 
 
   const [markerLayers, ] = useState<LayerGroup>(new LayerGroup());
 
-  //устанавливает цетр карты в city
   useEffect(
     () => {
       if (map) {
@@ -73,9 +72,9 @@ function Map({city, offers, selectedOffer, mapLocation}: MapProps): JSX.Element 
 
   return (
     <section
-      style={{width:'100%'}}
-      ref={mapRef}
-      className={mapClass}
+      style={{ width:'100%' }}
+      ref={ mapRef }
+      className={ mapClass }
     >
     </section>
   );

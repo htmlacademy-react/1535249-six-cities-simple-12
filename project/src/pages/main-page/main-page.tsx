@@ -25,17 +25,17 @@ function MainPage({ currentCity, offers, }: MainPageProps): JSX.Element {
       </Helmet>
       <Header />
 
-      <main className={mainPageClass}>
+      <main className={ mainPageClass }>
         <h1 className="visually-hidden">Cities</h1>
         <div className="tabs">
           <section className="locations container">
-            <LocationsList currentLocation={currentCity}/>
+            <LocationsList currentLocation={ currentCity }/>
           </section>
         </div>
         <div className="cities">
           {
             offers.length !== 0 ?
-              <OfferListContainer offers={offers} /> :
+              <OfferListContainer offers={ offers } /> :
               <MainPageEmpty />
           }
         </div>

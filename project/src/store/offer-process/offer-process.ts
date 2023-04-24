@@ -30,7 +30,6 @@ export const offerProcess = createSlice({
   },
   extraReducers(builder) {
     builder
-      // fetchOffersAction
       .addCase(fetchOffersAction.pending, (state) => {
         state.isOffersCompleting = true;
       })
@@ -41,7 +40,6 @@ export const offerProcess = createSlice({
       .addCase(fetchOffersAction.rejected, (state) => {
         state.isOffersCompleting = true;
       })
-      // fetchActiveOfferAction
       .addCase(fetchActiveOfferAction.pending, (state) => {
         state.isActiveOfferCompleting = false;
       })
@@ -52,18 +50,15 @@ export const offerProcess = createSlice({
       .addCase(fetchActiveOfferAction.rejected, (state) => {
         state.isActiveOfferCompleting = true;
       })
-      // fetchNearbyActiveOfferAction
       .addCase(fetchNearbyActiveOfferAction.pending, (state) => {
         state.isOffersCompleting = false;
       })
       .addCase(fetchNearbyActiveOfferAction.fulfilled, (state, action) => {
         state.nearbyActiveOffers = action.payload;
       })
-      // reviews
       .addCase(fetchCommentsAction.fulfilled, (state, action) => {
         state.reviews = action.payload;
       })
-      // add new review
       .addCase(fetchAddNewComment.pending, (state) => {
         state.addReviewIsSuccess = false;
       })
@@ -76,4 +71,4 @@ export const offerProcess = createSlice({
   }
 });
 
-export const {changeCity} = offerProcess.actions;
+export const { changeCity } = offerProcess.actions;

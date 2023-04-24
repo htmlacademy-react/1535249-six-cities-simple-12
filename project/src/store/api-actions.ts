@@ -17,8 +17,8 @@ export const fetchOffersAction = createAsyncThunk<Offers, undefined, {
 }
 >(
   'data/fetchOffers',
-  async (_arg, {dispatch, extra: api}) => {
-    const {data} = await api.get<Offers>(APIRoute.Offers);
+  async (_arg, { extra: api }) => {
+    const { data } = await api.get<Offers>(APIRoute.Offers);
     return data;
   }
 );
@@ -30,9 +30,9 @@ export const fetchActiveOfferAction = createAsyncThunk<Offer | null, number, {
 }
 >(
   'data/fetchActiveOffer',
-  async(id, {dispatch, extra: api}) => {
+  async(id, { dispatch, extra: api }) => {
     try {
-      const {data} = await api.get<Offer>(`${APIRoute.Offers}/${id}`);
+      const { data } = await api.get<Offer>(`${ APIRoute.Offers }/${ id }`);
       dispatch(fetchCommentsAction(id));
       return data;
     } catch (error) {
@@ -49,8 +49,8 @@ export const fetchNearbyActiveOfferAction = createAsyncThunk<Offers, number, {
 }
 >(
   'data/fetchOfferIdNearby',
-  async(id, {dispatch, extra: api}) => {
-    const {data} = await api.get<Offers>(`${APIRoute.Offers}/${id}/nearby`);
+  async(id, { extra: api }) => {
+    const { data } = await api.get<Offers>(`${ APIRoute.Offers }/${ id }/nearby`);
     return data;
   }
 );
@@ -62,8 +62,8 @@ export const fetchCommentsAction = createAsyncThunk<Reviews, number, {
 }
 >(
   'comments/fetchComments',
-  async(id, {dispatch, extra: api}) => {
-    const {data} = await api.get<Reviews>(`${APIRoute.Comments}/${id}`);
+  async(id, { extra: api }) => {
+    const { data } = await api.get<Reviews>(`${ APIRoute.Comments }/${ id }`);
     return data;
   }
 );
@@ -75,8 +75,8 @@ export const fetchAddNewComment = createAsyncThunk<ReviewData, ReviewData, {
 }
 >(
   'comment/fetchAddNewComment',
-  async({offerId, review}, {dispatch, extra: api}) => {
-    const {data} = await api.post<ReviewData>(`${APIRoute.Comments}/${offerId}`, review);
+  async({ offerId, review }, { extra: api }) => {
+    const { data } = await api.post<ReviewData>(`${ APIRoute.Comments }/${ offerId }`, review);
     return data;
   }
 );
@@ -88,8 +88,8 @@ export const checkAuthAction = createAsyncThunk<UserData, undefined, {
 }
 >(
   'user/checkAuth',
-  async(_arg, {dispatch, extra: api}) => {
-    const {data} = await api.get<UserData>(APIRoute.Login);
+  async(_arg, { extra: api }) => {
+    const { data } = await api.get<UserData>(APIRoute.Login);
     return data;
   },
 );
@@ -101,8 +101,8 @@ export const loginAction = createAsyncThunk<UserData, AuthData, {
 }
 >(
   'user/login',
-  async({login: email, password}, {dispatch, extra: api}) => {
-    const {data} = await api.post<UserData>(APIRoute.Login, {email,password});
+  async({ login: email, password }, { dispatch, extra: api }) => {
+    const { data } = await api.post<UserData>(APIRoute.Login, { email,password });
     saveToken(data.token);
     dispatch(redirectToRoute(AppRoute.Main));
     return data;
@@ -116,7 +116,7 @@ export const logoutAction = createAsyncThunk<void, undefined, {
 }
 >(
   'user/logout',
-  async(_arg, {dispatch, extra: api}) => {
+  async(_arg, { extra: api }) => {
     await api.delete(APIRoute.Logout);
     dropToken();
   },

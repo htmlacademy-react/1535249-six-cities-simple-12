@@ -3,7 +3,6 @@ import CitiesPlacesList from '../cities-places-list/cities-places-list';
 import Map from '../map/map';
 import { Offers, Offer } from '../../types/offer';
 import { MapLocation } from '../../const';
-//import { useAppDispatch, useAppSelector } from '../../hooks';
 
 type OfferListContainerProps = {
   offers: Offers;
@@ -24,11 +23,19 @@ function OfferListContainer({ offers }: OfferListContainerProps): JSX.Element {
     <div className="cities__places-container container">
       <section className="cities__places places">
         <h2 className="visually-hidden">Places</h2>
-        <b className="places__found">{offers.length} places to stay in {currentCity.name}</b>
-        <CitiesPlacesList offers={offers} onPlaceCardHover={onPlaceCardHover}/>
+        <b className="places__found">{offers.length} places to stay in { currentCity.name }</b>
+        <CitiesPlacesList
+          offers={ offers }
+          onPlaceCardHover={ onPlaceCardHover }
+        />
       </section>
       <div className="cities__right-section">
-        <Map city={currentCity} offers={offers} selectedOffer={activeOffer} mapLocation={MapLocation.cities}/>
+        <Map
+          city={ currentCity }
+          offers={ offers }
+          selectedOffer={ activeOffer }
+          mapLocation={ MapLocation.cities }
+        />
       </div>
     </div>
   );

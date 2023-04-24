@@ -6,15 +6,15 @@ type NearPlacesListProps = {
   offers: Offers;
 }
 
-function NearPlacesList({offers}: NearPlacesListProps): JSX.Element {
+function NearPlacesList({ offers }: NearPlacesListProps): JSX.Element {
   return (
     <div className="near-places__list places__list">
       {
         offers.slice(0, 3).map((offer) => (
           <PlaceCard
-            offer={offer}
-            location={PlaceCardLocation.nearPlaces}
-            key={offer.id}
+            offer={ offer }
+            location={ PlaceCardLocation.nearPlaces }
+            key={ offer.id }
           />
         ))
       }

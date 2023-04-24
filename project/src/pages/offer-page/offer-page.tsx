@@ -52,7 +52,6 @@ function OfferPage(): JSX.Element {
     dispatch(fetchActiveOfferAction(activeOfferId));
     dispatch(fetchCommentsAction(activeOfferId));
     dispatch(fetchNearbyActiveOfferAction(activeOfferId));
-
   }, [dispatch, activeOfferId]);
 
   if (isNaN(activeOfferId)) {
