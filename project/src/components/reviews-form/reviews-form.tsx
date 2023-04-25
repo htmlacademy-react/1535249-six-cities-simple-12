@@ -17,6 +17,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
     review: '',
   });
   const [isSubmitDisabled, setSubmitDisabled] = useState(true);
+  const [isFormDisabled, setFormDisabled] = useState(false);
   const isSuccess = useAppSelector(createReviewIsSuccess);
 
   useEffect(() => {
@@ -25,6 +26,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
         rating: '',
         review: '',
       });
+      setFormDisabled(false);
     }
   }, [isSuccess]);
 
@@ -56,6 +58,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
           rating: Number(formData.rating),
         }
       });
+      setFormDisabled(true);
     }
   };
 
@@ -85,6 +88,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
           id="4-stars"
           type="radio"
           checked={ formData.rating === '4' }
+          disabled={ isFormDisabled }
           onChange={ fieldChangeHandle }
         />
         <label htmlFor="4-stars" className="reviews__rating-label form__rating-label" title="good">
@@ -100,6 +104,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
           id="3-stars"
           type="radio"
           checked={ formData.rating === '3' }
+          disabled={ isFormDisabled }
           onChange={ fieldChangeHandle }
         />
         <label htmlFor="3-stars" className="reviews__rating-label form__rating-label" title="not bad">
@@ -115,6 +120,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
           id="2-stars"
           type="radio"
           checked={ formData.rating === '2' }
+          disabled={ isFormDisabled }
           onChange={ fieldChangeHandle }
         />
         <label htmlFor="2-stars" className="reviews__rating-label form__rating-label" title="badly">
@@ -130,6 +136,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
           id="1-star"
           type="radio"
           checked={ formData.rating === '1' }
+          disabled={ isFormDisabled }
           onChange={ fieldChangeHandle }
         />
         <label htmlFor="1-star" className="reviews__rating-label form__rating-label" title="terribly">
@@ -144,6 +151,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
         name="review"
         placeholder="Tell how was your stay, what you like and what can be improved"
         value={ formData.review }
+        disabled={ isFormDisabled }
         onChange={ fieldChangeHandle }
       >
       </textarea>
@@ -154,7 +162,7 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
         <button
           className="reviews__submit form__submit button"
           type="submit"
-          disabled={ isSubmitDisabled }
+          disabled={ isSubmitDisabled || isFormDisabled }
         >
           Submit
         </button>
