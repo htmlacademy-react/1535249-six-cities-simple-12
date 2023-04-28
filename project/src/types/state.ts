@@ -1,5 +1,5 @@
 import { store } from '../store/index';
-import { AuthorizationStatus } from '../const';
+import { AuthorizationStatus, RequestStatus } from '../const';
 import { UserData } from './user-data';
 import { Offer, Offers } from './offer';
 import { Reviews } from './review';
@@ -12,7 +12,7 @@ export type OfferProcess = {
   nearbyActiveOffers: Offers;
   isOffersCompleting: boolean;
   isActiveOfferCompleting: boolean;
-  addReviewIsSuccess: boolean;
+  addReviewStatus: RequestStatus;
 }
 
 export type UserProcess = {

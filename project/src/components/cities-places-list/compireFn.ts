@@ -2,7 +2,7 @@ import { Offer, Offers } from '../../types/offer';
 
 export const PlacesSortingTypes = ['Popular', 'Price: low to high', 'Price: high to low', 'Top rated first',];
 
-export const sortingByPopular = (placeA: Offer, placeB: Offer) => 0;
+export const sortingByPopular = () => 0;
 
 export const sortingByPriceLowToHigh = (placeA: Offer, placeB: Offer) => placeA.price - placeB.price;
 

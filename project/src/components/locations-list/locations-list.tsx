@@ -16,7 +16,7 @@ function LocationsList({ currentLocation }: LocationsListProps): JSX.Element {
         CITIES_NAME.map((locationItem) => (
           <li className="locations__item" key={ locationItem }>
             <LocationsItemLink
-              position={ LocationItemLinkPosition.cities }
+              position={ LocationItemLinkPosition.Cities }
               locationsItemName={ locationItem }
               isActive={ currentLocation === locationItem }
               onClick={(locationItemName) => dispatch(changeCity(locationItemName))}

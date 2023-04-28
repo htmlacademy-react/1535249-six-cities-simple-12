@@ -13,7 +13,7 @@ type MainPageProps = {
 
 function MainPage({ currentCity, offers, }: MainPageProps): JSX.Element {
   const mainPageClass = classNames('page__main page__main--index', {
-    'page__main--index-empty': offers.length === 0,
+    'page__main--index-empty': !offers.length,
   });
 
   return (
@@ -34,7 +34,7 @@ function MainPage({ currentCity, offers, }: MainPageProps): JSX.Element {
         </div>
         <div className="cities">
           {
-            offers.length !== 0 ?
+            offers.length ?
               <OfferListContainer offers={ offers } /> :
               <MainPageEmpty />
           }

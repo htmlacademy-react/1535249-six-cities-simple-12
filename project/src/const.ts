@@ -22,34 +22,54 @@ export enum AuthorizationStatus {
   Unknow = 'UNKNOW',
 }
 
+export enum RequestStatus {
+  Pending = 'PENDING',
+  Success = 'SUCCESS',
+  Failure = 'FAILURE',
+  Unknow = 'UNKNOW',
+}
+
 export enum NameSpace {
   Data = 'DATA',
   User = 'USER',
 }
 
-export enum PlaceCardLocation {
-  cities = 'cities',
-  nearPlaces = 'nearPlaces',
+export enum PlaceCardPosition {
+  Cities = 'cities',
+  NearPlaces = 'nearPlaces',
 }
 
-export enum MapLocation {
-  cities = 'cities',
-  property = 'property',
+export enum MapPosition {
+  Cities = 'cities',
+  Property = 'property',
 }
 
 export enum LocationItemLinkPosition {
-  cities = 'cities',
-  login = 'login',
+  Cities = 'cities',
+  Login = 'login',
 }
 
 export const GALLERY_IMG_COUNT = 6;
-export const MIN_RATING = 0;
-export const MAX_RATING = 5;
-export const MIN_COMMENT_LENGTH = 50;
-export const MAX_COMMENT_LENGTH = 300;
+
+export const NEARBY_LIST_PLACE_CARD_COUNT = 3;
+
+export const REVIEWS_FOR_SHOW_COUNT = 10;
+
+export const enum Rating {
+  Min = 0,
+  Max = 5,
+}
+
+export const enum CommentLength {
+  Min = 50,
+  Max = 300,
+}
+
 export const ZERO_ID = 0;
 
-export const URL_MARKER_DEFAULT = 'img/pin.svg';
-export const URL_MARKER_CURRENT = 'img/pin-active.svg';
+export enum UrlMarker {
+  Default = 'img/pin.svg',
+  Current = 'img/pin-active.svg',
+}
 
 export const CITIES_NAME = ['Paris', 'Cologne', 'Brussels', 'Amsterdam', 'Hamburg', 'Dusseldorf',];

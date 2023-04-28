@@ -9,6 +9,8 @@ import { UserData } from '../types/user-data';
 import { ReviewData } from '../types/review-data';
 import { Offer, Offers } from '../types/offer';
 import { Reviews } from '../types/review';
+import { toast } from 'react-toastify';
+
 
 export const fetchOffersAction = createAsyncThunk<Offers, undefined, {
   dispatch: AppDispatch;
@@ -68,16 +70,21 @@ export const fetchCommentsAction = createAsyncThunk<Reviews, number, {
   }
 );
 
-export const fetchAddNewComment = createAsyncThunk<ReviewData, ReviewData, {
+export const fetchAddNewComment = createAsyncThunk<Reviews, ReviewData, {
   dispatch: AppDispatch;
   state: State;
   extra: AxiosInstance;
 }
 >(
   'comment/fetchAddNewComment',
-  async({ offerId, review }, { extra: api }) => {
-    const { data } = await api.post<ReviewData>(`${ APIRoute.Comments }/${ offerId }`, review);
-    return data;
+  async({ offerId, review }, { extra: api, rejectWithValue }) => {
+    try {
+      const { data } = await api.post<Reviews>(`${ APIRoute.Comments }/${ offerId }`, review);
+      return data;
+    } catch (error) {
+      toast.error('Ups! Unable to save review');
+      return rejectWithValue(null);
+    }
   }
 );
 

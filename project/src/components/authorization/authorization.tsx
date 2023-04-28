@@ -25,7 +25,7 @@ export const NavProfileAuth = ({ user }: NavProfileAuthProps) => {
       <li className="header__nav-item">
         <Link
           className="header__nav-link"
-          to="/"
+          to={AppRoute.Main}
           onClick={ signOutClickHandler }
         >
           <span className="header__signout">Sign out</span>
