@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { LocationItemLinkPosition } from '../../const';
+import { AppRoute, LocationItemLinkPosition } from '../../const';
 
 type LocationsItemLinkProps = {
   position: LocationItemLinkPosition;
@@ -17,7 +17,7 @@ function LocationsItemLink ({
 }: LocationsItemLinkProps): JSX.Element {
 
   const locationItemLinkClass = classNames('locations__item-link', {
-    'tabs__item': position === LocationItemLinkPosition.cities,
+    'tabs__item': position === LocationItemLinkPosition.Cities,
     'tabs__item--active': isActive === true,
   });
 
@@ -29,7 +29,7 @@ function LocationsItemLink ({
   return (
     <Link
       className={locationItemLinkClass}
-      to="/"
+      to={AppRoute.Main}
       onClick={onLocationItemClickHandler}
     >
       <span>{ locationsItemName }</span>

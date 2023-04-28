@@ -1,9 +1,9 @@
 import { ChangeEvent, FormEvent, useState, useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks';
-import { MIN_COMMENT_LENGTH, MAX_COMMENT_LENGTH} from '../../const';
+import { CommentLength, RequestStatus} from '../../const';
 import { ReviewData } from '../../types/review-data';
-import { fetchAddNewComment, fetchCommentsAction } from '../../store/api-actions';
-import { createReviewIsSuccess } from '../../store/offer-process/selectors';
+import { fetchAddNewComment } from '../../store/api-actions';
+import { createReviewStatus } from '../../store/offer-process/selectors';
 
 type ReviewsFormProps = {
   activeOfferId: number;
@@ -18,23 +18,32 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
   });
   const [isSubmitDisabled, setSubmitDisabled] = useState(true);
   const [isFormDisabled, setFormDisabled] = useState(false);
-  const isSuccess = useAppSelector(createReviewIsSuccess);
+  const createReviewStatusRequest = useAppSelector(createReviewStatus);
 
   useEffect(() => {
-    if (isSuccess) {
+    if (createReviewStatusRequest === RequestStatus.Success) {
       setFormData({
         rating: '',
         review: '',
       });
+    }
+
+    if (createReviewStatusRequest === RequestStatus.Failure ||
+        createReviewStatusRequest === RequestStatus.Unknow ||
+        createReviewStatusRequest === RequestStatus.Success) {
       setFormDisabled(false);
     }
-  }, [isSuccess]);
+
+    if (createReviewStatusRequest === RequestStatus.Pending) {
+      setFormDisabled(true);
+    }
+  }, [createReviewStatusRequest]);
 
   useEffect(() => {
     setSubmitDisabled(
-      formData.rating === '' ||
-      formData.review.length < MIN_COMMENT_LENGTH ||
-      formData.review.length > MAX_COMMENT_LENGTH
+      !formData.rating ||
+      formData.review.length < CommentLength.Min ||
+      formData.review.length > CommentLength.Max
     );
   }, [formData, isSubmitDisabled]);
 
@@ -45,12 +54,11 @@ function ReviewsForm({ activeOfferId }: ReviewsFormProps): JSX.Element {
 
   const onSubmit = ({ review, offerId }: ReviewData) => {
     dispatch(fetchAddNewComment({ review, offerId }));
-    dispatch(fetchCommentsAction(offerId));
   };
 
   const submitHandle = (evt: FormEvent <HTMLFormElement>) => {
     evt.preventDefault();
-    if (formData.rating !== '' && formData.review !== '') {
+    if (formData.rating && formData.review) {
       onSubmit({
         offerId: activeOfferId,
         review: {

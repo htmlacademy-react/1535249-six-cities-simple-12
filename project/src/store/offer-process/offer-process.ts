@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { NameSpace, CITIES_NAME } from '../../const';
+import { NameSpace, CITIES_NAME, RequestStatus } from '../../const';
 import { OfferProcess } from '../../types/state';
 import {
   fetchOffersAction,
@@ -17,7 +17,7 @@ const initialState: OfferProcess = {
   nearbyActiveOffers: [],
   isOffersCompleting: false,
   isActiveOfferCompleting: false,
-  addReviewIsSuccess: false,
+  addReviewStatus: RequestStatus.Unknow,
 };
 
 export const offerProcess = createSlice({
@@ -60,13 +60,14 @@ export const offerProcess = createSlice({
         state.reviews = action.payload;
       })
       .addCase(fetchAddNewComment.pending, (state) => {
-        state.addReviewIsSuccess = false;
+        state.addReviewStatus = RequestStatus.Pending;
       })
-      .addCase(fetchAddNewComment.fulfilled, (state) => {
-        state.addReviewIsSuccess = true;
+      .addCase(fetchAddNewComment.fulfilled, (state, action) => {
+        state.addReviewStatus = RequestStatus.Success;
+        state.reviews = action.payload;
       })
       .addCase(fetchAddNewComment.rejected, (state) => {
-        state.addReviewIsSuccess = false;
+        state.addReviewStatus = RequestStatus.Failure;
       });
   }
 });

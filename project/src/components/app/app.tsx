@@ -36,7 +36,7 @@ function App(): JSX.Element {
       <HistoryRouter history={ browserHistory }>
         <Routes>
           <Route
-            path="/"
+            path={AppRoute.Main}
             element={
               <MainPage
                 currentCity={ cityName }
@@ -49,7 +49,7 @@ function App(): JSX.Element {
             element={ <LoginPage /> }
           />
           <Route
-            path="*"
+            path={AppRoute.NotFound}
             element={ <NotFoundPage /> }
           />
           <Route

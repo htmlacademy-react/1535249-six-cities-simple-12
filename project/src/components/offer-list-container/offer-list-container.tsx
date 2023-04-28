@@ -2,7 +2,7 @@ import { useState } from 'react';
 import CitiesPlacesList from '../cities-places-list/cities-places-list';
 import Map from '../map/map';
 import { Offers, Offer } from '../../types/offer';
-import { MapLocation } from '../../const';
+import { MapPosition } from '../../const';
 
 type OfferListContainerProps = {
   offers: Offers;
@@ -34,7 +34,7 @@ function OfferListContainer({ offers }: OfferListContainerProps): JSX.Element {
           city={ currentCity }
           offers={ offers }
           selectedOffer={ activeOffer }
-          mapLocation={ MapLocation.cities }
+          mapLocation={ MapPosition.Cities }
         />
       </div>
     </div>

@@ -19,7 +19,7 @@ import NearPlacesList from '../../components/near-places-list/near-places-list';
 import NotFoundPage from '../not-found-page/not-found-page';
 import LoadingScreen from '../loading-screen/loading-screen';
 
-import { AuthorizationStatus, MapLocation, GALLERY_IMG_COUNT } from '../../const';
+import { AuthorizationStatus, MapPosition, GALLERY_IMG_COUNT, REVIEWS_FOR_SHOW_COUNT } from '../../const';
 import {
   getActiveOffer,
   getActiveOfferCompletingStatus,
@@ -46,7 +46,7 @@ function OfferPage(): JSX.Element {
   const authorizationStatus = useAppSelector(getAuthorizationStatus);
   const isActiveOfferCompleting = useAppSelector(getActiveOfferCompletingStatus);
 
-  const reviewsForShow = sortReviewsByDateDesc(reviews).slice(0, 10);
+  const reviewsForShow = sortReviewsByDateDesc(reviews).slice(0, REVIEWS_FOR_SHOW_COUNT);
 
   useEffect(() => {
     dispatch(fetchActiveOfferAction(activeOfferId));
@@ -152,7 +152,7 @@ function OfferPage(): JSX.Element {
                 </div>
               </div>
               <section className="property__reviews reviews">
-                <h2 className="reviews__title">Reviews &middot; <span className="reviews__amount">{ reviewsForShow.length }</span></h2>
+                <h2 className="reviews__title">Reviews &middot; <span className="reviews__amount">{ reviews.length }</span></h2>
                 <ul className="reviews__list">
                   {
                     reviewsForShow.map((comment) => <Comment review={comment} key={comment.id}/>)
@@ -165,7 +165,7 @@ function OfferPage(): JSX.Element {
               city={ activeOffer.city }
               offers={ [...nearbyActiveOffers, activeOffer] }
               selectedOffer={ activeOffer }
-              mapLocation={ MapLocation.property }
+              mapLocation={ MapPosition.Property }
             />
           </div>
         </section>

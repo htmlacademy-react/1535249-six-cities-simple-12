@@ -48,7 +48,7 @@ function LoginPage(): JSX.Element {
   };
 
   const isValidPassword = (password: string) => {
-    const pattern = new RegExp('(?=.*[a-z])|(?=.*[A-Z])(?=.*[0-9]).{1,20}');
+    const pattern = new RegExp('^(?=.*[0-9])(?=[a-zA-Z0-9]*[a-zA-Z])[a-zA-Z0-9]{2,20}$');
     return pattern.test(password);
   };
 
@@ -108,7 +108,7 @@ function LoginPage(): JSX.Element {
           <section className="locations locations--login locations--current">
             <div className="locations__item">
               <LocationsItemLink
-                position={ LocationItemLinkPosition.login }
+                position={ LocationItemLinkPosition.Login }
                 locationsItemName={ randomCityName }
                 onClick={ (locationItemName) => {
                   dispatch(changeCity(locationItemName));
